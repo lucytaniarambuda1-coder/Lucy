@@ -3,8 +3,8 @@ import { useLocalStorage } from '../hooks/useLocalStorage'
 import { buildGCalUrl } from '../utils/gcal'
 
 const CAT_COLORS = {
-  personal: '#A78BFA', work: '#34D399', health: '#F87171',
-  finance: '#FBBF24', social: '#60A5FA', growth: '#F97316',
+  home: '#0EA5E9', work: '#059669', personal: '#A78BFA',
+  school: '#6366F1', health: '#EF4444', finance: '#D97706',
 }
 
 const PRI_COLORS = { high: '#EF4444', medium: '#F59E0B', low: '#10B981' }

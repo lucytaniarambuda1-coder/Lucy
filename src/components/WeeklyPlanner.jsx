@@ -4,8 +4,8 @@ import { buildGCalUrl } from '../utils/gcal'
 const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const PRI_COLORS = { high: '#EF4444', medium: '#F59E0B', low: '#10B981' }
 const CAT_COLORS = {
-  personal: '#A78BFA', work: '#34D399', health: '#F87171',
-  finance: '#FBBF24', social: '#60A5FA', growth: '#F97316',
+  home: '#0EA5E9', work: '#059669', personal: '#A78BFA',
+  school: '#6366F1', health: '#EF4444', finance: '#D97706',
 }
 
 function getWeekStart(offset = 0) {
@@ -42,7 +42,7 @@ export default function WeeklyPlanner({ tasks, onAdd, onToggle }) {
 
   const handleQuickAdd = (dateStr) => {
     if (!quickTitle.trim()) return
-    onAdd({ title: quickTitle.trim(), dueDate: dateStr, category: 'personal', priority: 'medium', description: '', dueTime: '', tags: [] })
+    onAdd({ title: quickTitle.trim(), dueDate: dateStr, category: 'work', priority: 'medium', description: '', dueTime: '', tags: [] })
     setQuickTitle('')
     setQuickDay(null)
   }

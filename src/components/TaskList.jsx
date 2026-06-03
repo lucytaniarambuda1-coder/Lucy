@@ -2,12 +2,12 @@ import React, { useState, useRef } from 'react'
 import { buildGCalUrl } from '../utils/gcal'
 
 const CATEGORIES = {
-  personal:  { label: 'Personal',        color: '#A78BFA', bg: '#EDE9FE' },
-  work:      { label: 'Work',            color: '#059669', bg: '#D1FAE5' },
-  health:    { label: 'Health',          color: '#EF4444', bg: '#FEE2E2' },
-  finance:   { label: 'Finance',         color: '#D97706', bg: '#FEF3C7' },
-  social:    { label: 'Social',          color: '#2563EB', bg: '#DBEAFE' },
-  growth:    { label: 'Personal Growth', color: '#F97316', bg: '#FFEDD5' },
+  home:     { label: 'Home',     color: '#0EA5E9', bg: '#E0F2FE' },
+  work:     { label: 'Work',     color: '#059669', bg: '#D1FAE5' },
+  personal: { label: 'Personal', color: '#A78BFA', bg: '#EDE9FE' },
+  school:   { label: 'School',   color: '#6366F1', bg: '#EEF2FF' },
+  health:   { label: 'Health',   color: '#EF4444', bg: '#FEE2E2' },
+  finance:  { label: 'Finance',  color: '#D97706', bg: '#FEF3C7' },
 }
 const PRI_COLORS = { high: '#EF4444', medium: '#F59E0B', low: '#10B981' }
 const ALL_CATS = Object.keys(CATEGORIES)
