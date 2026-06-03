@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { buildGCalUrl } from '../utils/gcal'
 
 const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const PRI_COLORS = { high: '#EF4444', medium: '#F59E0B', low: '#10B981' }
@@ -145,6 +146,17 @@ function DayTask({ task, onToggle, done }) {
         {task.title}
       </span>
       <div style={{ ...s.priDot, background: PRI_COLORS[task.priority] || '#9CA3AF' }} />
+      {task.dueDate && (
+        <a
+          href={buildGCalUrl(task)}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={s.gcalLink}
+          onClick={e => e.stopPropagation()}
+        >
+          GCal
+        </a>
+      )}
     </div>
   )
 }
@@ -204,6 +216,11 @@ const s = {
   checkMark: { color: 'white', fontSize: 10, fontWeight: 700 },
   taskTitle: { flex: 1, fontSize: 13, color: 'var(--text)' },
   priDot: { width: 7, height: 7, borderRadius: '50%', flexShrink: 0 },
+  gcalLink: {
+    fontSize: 10, fontWeight: 700, color: '#059669',
+    textDecoration: 'none', padding: '2px 5px',
+    background: '#D1FAE5', borderRadius: 4, flexShrink: 0,
+  },
   quickRow: { display: 'flex', gap: 6, alignItems: 'center', marginTop: 4 },
   quickInput: {
     flex: 1, border: '1.5px solid var(--primary)', borderRadius: 8,

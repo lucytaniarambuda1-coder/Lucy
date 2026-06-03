@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useLocalStorage } from '../hooks/useLocalStorage'
+import { buildGCalUrl } from '../utils/gcal'
 
 const CAT_COLORS = {
   personal: '#A78BFA', work: '#34D399', health: '#F87171',
@@ -97,6 +98,11 @@ export default function TodayView({ tasks, onToggle, onPickTop3 }) {
                       </span>
                     )}
                     <span style={{ ...s.priDot, background: PRI_COLORS[task.priority] || '#9CA3AF' }} />
+                    {task.dueDate && (
+                      <a href={buildGCalUrl(task)} target="_blank" rel="noopener noreferrer" style={s.gcalLink} onClick={e => e.stopPropagation()}>
+                        GCal
+                      </a>
+                    )}
                   </div>
                 </div>
                 <button style={s.removeTop3} onClick={() => setTodayIds(todayIds.filter(x => x !== task.id))}>×</button>
@@ -242,6 +248,11 @@ const s = {
   catTag: { fontSize: 10, fontWeight: 600, padding: '2px 7px', borderRadius: 99 },
   priDot: { width: 8, height: 8, borderRadius: '50%', display: 'inline-block' },
   removeTop3: { color: 'var(--text-3)', fontSize: 18, padding: '4px 8px', cursor: 'pointer' },
+  gcalLink: {
+    fontSize: 10, fontWeight: 700, color: '#059669',
+    textDecoration: 'none', padding: '2px 5px',
+    background: '#D1FAE5', borderRadius: 4, lineHeight: 1.4,
+  },
   pickBtn: {
     width: '100%',
     padding: '14px 16px',

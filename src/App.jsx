@@ -4,6 +4,7 @@ import TaskList from './components/TaskList'
 import WeeklyPlanner from './components/WeeklyPlanner'
 import BrainDump from './components/BrainDump'
 import HabitsView from './components/HabitsView'
+import NotesView from './components/NotesView'
 import TaskModal from './components/TaskModal'
 import { useLocalStorage } from './hooks/useLocalStorage'
 
@@ -60,7 +61,10 @@ const TABS = [
   { id: 'weekly', label: 'Weekly' },
   { id: 'braindump', label: 'Brain Dump' },
   { id: 'habits', label: 'Habits' },
+  { id: 'notes', label: 'Notes' },
 ]
+
+const todayISO = () => new Date().toISOString().split('T')[0]
 
 export default function App() {
   const [tasks, setTasks] = useLocalStorage('lucys-tasks', LIFE_LIST_TASKS)
@@ -96,7 +100,10 @@ export default function App() {
 
   const toggleTask = (id) => setTasks(prev => prev.map(t => t.id === id ? { ...t, completed: !t.completed } : t))
   const deleteTask = (id) => setTasks(prev => prev.filter(t => t.id !== id))
+  const updateTaskDate = (id, date) => setTasks(prev => prev.map(t => t.id === id ? { ...t, dueDate: date } : t))
   const bulkAdd = (newTasks) => setTasks(prev => [...newTasks, ...prev])
+
+  const todayDueCount = tasks.filter(t => !t.completed && t.dueDate === todayISO()).length
 
   return (
     <div style={s.app}>
@@ -114,6 +121,9 @@ export default function App() {
             onClick={() => setActiveTab(tab.id)}
           >
             {tab.label}
+            {tab.id === 'today' && todayDueCount > 0 && (
+              <span style={s.badge}>{todayDueCount > 99 ? '99+' : todayDueCount}</span>
+            )}
             {activeTab === tab.id && <div style={s.tabLine} />}
           </button>
         ))}
@@ -125,7 +135,7 @@ export default function App() {
           <TodayView tasks={tasks} onToggle={toggleTask} onPickTop3={() => setActiveTab('tasks')} />
         )}
         {activeTab === 'tasks' && (
-          <TaskList tasks={tasks} onToggle={toggleTask} onEdit={openEdit} onDelete={deleteTask} onAdd={openAdd} />
+          <TaskList tasks={tasks} onToggle={toggleTask} onEdit={openEdit} onDelete={deleteTask} onAdd={openAdd} onUpdateDate={updateTaskDate} />
         )}
         {activeTab === 'weekly' && (
           <WeeklyPlanner tasks={tasks} onAdd={openAdd} onToggle={toggleTask} />
@@ -135,6 +145,9 @@ export default function App() {
         )}
         {activeTab === 'habits' && (
           <HabitsView />
+        )}
+        {activeTab === 'notes' && (
+          <NotesView />
         )}
       </main>
 
@@ -206,6 +219,22 @@ const s = {
     height: 2,
     background: 'var(--primary)',
     borderRadius: '2px 2px 0 0',
+  },
+  badge: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    background: '#EF4444',
+    color: 'white',
+    fontSize: 9,
+    fontWeight: 700,
+    borderRadius: 99,
+    minWidth: 16,
+    height: 16,
+    padding: '0 4px',
+    marginLeft: 4,
+    verticalAlign: 'middle',
+    lineHeight: 1,
   },
   main: {
     flex: 1,
