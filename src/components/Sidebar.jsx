@@ -14,6 +14,7 @@ const CATEGORIES = [
   { id: 'health', label: 'Health', color: '#F87171' },
   { id: 'finance', label: 'Finance', color: '#FBBF24' },
   { id: 'social', label: 'Social', color: '#60A5FA' },
+  { id: 'growth', label: 'Personal Growth', color: '#F97316' },
 ]
 
 export default function Sidebar({ activeView, setActiveView, tasks }) {

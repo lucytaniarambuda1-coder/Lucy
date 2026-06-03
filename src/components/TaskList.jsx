@@ -6,6 +6,7 @@ const CATEGORIES = {
   health: { label: 'Health', color: '#EF4444', bg: '#FEE2E2', emoji: '💪' },
   finance: { label: 'Finance', color: '#D97706', bg: '#FEF3C7', emoji: '💰' },
   social: { label: 'Social', color: '#2563EB', bg: '#DBEAFE', emoji: '🤝' },
+  growth: { label: 'Personal Growth', color: '#F97316', bg: '#FFEDD5', emoji: '🌱' },
 }
 
 const PRIORITIES = {

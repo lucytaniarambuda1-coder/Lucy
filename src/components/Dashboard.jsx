@@ -17,6 +17,7 @@ const CATEGORIES = [
   { id: 'health', label: 'Health', color: '#F87171', emoji: '💪' },
   { id: 'finance', label: 'Finance', color: '#FBBF24', emoji: '💰' },
   { id: 'social', label: 'Social', color: '#60A5FA', emoji: '🤝' },
+  { id: 'growth', label: 'Personal Growth', color: '#F97316', emoji: '🌱' },
 ]
 
 function getDayGreeting() {
@@ -146,6 +147,7 @@ const CATEGORY_MAP = {
   health: { label: 'Health', color: '#F87171' },
   finance: { label: 'Finance', color: '#FBBF24' },
   social: { label: 'Social', color: '#60A5FA' },
+  growth: { label: 'Personal Growth', color: '#F97316' },
 }
 
 function MiniTaskRow({ task }) {

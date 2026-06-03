@@ -6,6 +6,7 @@ const CATEGORIES = [
   { id: 'health', label: 'Health', emoji: '💪' },
   { id: 'finance', label: 'Finance', emoji: '💰' },
   { id: 'social', label: 'Social', emoji: '🤝' },
+  { id: 'growth', label: 'Personal Growth', emoji: '🌱' },
 ]
 
 const PRIORITIES = [
