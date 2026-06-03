@@ -5,58 +5,45 @@
 }
 
 :root {
-  --purple-deep: #4C1D95;
-  --purple: #7C3AED;
-  --purple-light: #A78BFA;
-  --purple-pale: #EDE9FE;
-  --pink: #EC4899;
-  --pink-light: #F9A8D4;
-  --cyan: #06B6D4;
-  --cyan-light: #67E8F9;
+  --primary: #7C3AED;
+  --primary-light: #A78BFA;
+  --primary-pale: #EDE9FE;
+  --accent: #EC4899;
   --bg: #F5F3FF;
-  --bg-card: #FFFFFF;
-  --bg-sidebar: #1E1B4B;
-  --text-primary: #1E1B4B;
-  --text-secondary: #6B7280;
-  --text-light: #9CA3AF;
+  --card: #FFFFFF;
+  --text: #1E1B4B;
+  --text-2: #6B7280;
+  --text-3: #9CA3AF;
   --border: #E5E7EB;
-  --shadow: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
-  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.05);
-  --radius: 16px;
-  --radius-sm: 10px;
+  --danger: #EF4444;
+  --success: #10B981;
+  --warn: #F59E0B;
+  --header-h: 56px;
+  --tabs-h: 46px;
+  --radius: 12px;
+  --shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 
-html, body {
+html, body, #root {
   height: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: var(--bg);
-  color: var(--text-primary);
+  color: var(--text);
   -webkit-font-smoothing: antialiased;
+  font-size: 15px;
 }
 
 #root {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
 }
 
-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  font-family: inherit;
-}
+button { cursor: pointer; border: none; font-family: inherit; background: none; }
+input, textarea, select { font-family: inherit; font-size: 16px; outline: none; }
 
-input, textarea, select {
-  font-family: inherit;
-  outline: none;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--purple-light);
-  border-radius: 99px;
-}
+::-webkit-scrollbar { width: 3px; height: 3px; }
+::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 99px; }
