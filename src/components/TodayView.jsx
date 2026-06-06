@@ -9,6 +9,16 @@ const CAT_COLORS = {
 
 const PRI_COLORS = { high: '#EF4444', medium: '#F59E0B', low: '#10B981' }
 
+const DEEP_WORK = {
+  0: { label: 'Rest & Reset',        note: 'Church, family, planning for the week ahead' },
+  1: { label: "Master's",            note: 'Research, reading, writing, supervisor prep' },
+  2: { label: "Master's",            note: 'Research, reading, writing, supervisor prep' },
+  3: { label: 'AI Skills',           note: 'Claude, prompting, automation, AI agents' },
+  4: { label: 'Dash Digital',        note: 'Dashboard, MSA, operating model, Needle' },
+  5: { label: 'Strategic Projects',  note: 'Kenya, consulting portfolio, planning' },
+  6: { label: 'CEO Day',             note: 'Masters 3h → Dash Digital 2h → Life in the evening' },
+}
+
 function todayKey() {
   return new Date().toDateString()
 }
@@ -54,6 +64,8 @@ export default function TodayView({ tasks, onToggle, onPickTop3 }) {
     }
   }
 
+  const deepWork = DEEP_WORK[new Date().getDay()]
+
   return (
     <div style={s.page}>
       {/* Greeting */}
@@ -67,6 +79,15 @@ export default function TodayView({ tasks, onToggle, onPickTop3 }) {
         <StatBox label="Completed" value={completed} color="var(--success, #10B981)" />
         <StatBox label="High Priority" value={highPri} color="#EF4444" />
         <StatBox label="Remaining" value={remaining} color="var(--primary)" />
+      </div>
+
+      {/* Deep Work Block */}
+      <div style={s.section}>
+        <div style={s.sectionTitle}>TODAY'S DEEP WORK BLOCK  ·  9:00 – 11:00 AM</div>
+        <div style={s.deepWorkCard}>
+          <div style={s.deepWorkFocus}>{deepWork.label}</div>
+          <div style={s.deepWorkNote}>{deepWork.note}</div>
+        </div>
       </div>
 
       {/* Top 3 */}
@@ -211,6 +232,12 @@ const s = {
   statLabel: { fontSize: 12, color: 'var(--text-2)', marginTop: 4, fontWeight: 500 },
   section: {},
   sectionTitle: { fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', color: 'var(--text-3)', marginBottom: 8 },
+  deepWorkCard: {
+    background: 'white', borderRadius: 'var(--radius)', boxShadow: 'var(--shadow)',
+    padding: '14px 16px', borderLeft: '4px solid #0EA5E9',
+  },
+  deepWorkFocus: { fontSize: 20, fontWeight: 800, color: 'var(--text)', fontFamily: "'Playfair Display', serif" },
+  deepWorkNote: { fontSize: 13, color: 'var(--text-2)', marginTop: 4, lineHeight: 1.5 },
   top3Card: {
     background: 'white',
     borderRadius: 'var(--radius)',

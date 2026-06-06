@@ -5,6 +5,7 @@ import WeeklyPlanner from './components/WeeklyPlanner'
 import BrainDump from './components/BrainDump'
 import HabitsView from './components/HabitsView'
 import NotesView from './components/NotesView'
+import FocusView from './components/FocusView'
 import TaskModal from './components/TaskModal'
 import { useLocalStorage } from './hooks/useLocalStorage'
 
@@ -119,6 +120,7 @@ const TABS = [
   { id: 'braindump', label: 'Brain Dump' },
   { id: 'habits', label: 'Habits' },
   { id: 'notes', label: 'Notes' },
+  { id: 'focus', label: 'Focus' },
 ]
 
 const todayISO = () => new Date().toISOString().split('T')[0]
@@ -204,6 +206,9 @@ export default function App() {
         )}
         {activeTab === 'notes' && (
           <NotesView />
+        )}
+        {activeTab === 'focus' && (
+          <FocusView />
         )}
       </main>
 

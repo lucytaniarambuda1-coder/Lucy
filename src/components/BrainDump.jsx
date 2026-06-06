@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
 
 const CATEGORIES = [
-  { id: 'personal',  label: 'Personal' },
-  { id: 'work',      label: 'Work' },
-  { id: 'health',    label: 'Health' },
-  { id: 'finance',   label: 'Finance' },
-  { id: 'social',    label: 'Social' },
-  { id: 'growth',    label: 'Personal Growth' },
+  { id: 'home',     label: 'Home' },
+  { id: 'work',     label: 'Work' },
+  { id: 'personal', label: 'Personal' },
+  { id: 'school',   label: 'School' },
+  { id: 'health',   label: 'Health' },
+  { id: 'finance',  label: 'Finance' },
 ]
 
 export default function BrainDump({ onBulkAdd }) {
   const [text, setText] = useState('')
-  const [category, setCategory] = useState('personal')
+  const [category, setCategory] = useState('work')
   const [priority, setPriority] = useState('medium')
   const [feedback, setFeedback] = useState(null)
 
