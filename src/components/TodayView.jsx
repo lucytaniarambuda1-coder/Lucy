@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useLocalStorage } from '../hooks/useLocalStorage'
 import { buildGCalUrl } from '../utils/gcal'
 
 const CAT_COLORS = {
@@ -34,8 +33,7 @@ function formatDate() {
   return new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })
 }
 
-export default function TodayView({ tasks, onToggle, onPickTop3 }) {
-  const [top3, setTop3] = useLocalStorage('lucys-top3', {})
+export default function TodayView({ tasks, onToggle, top3, setTop3 }) {
   const [picking, setPicking] = useState(false)
   const [search, setSearch] = useState('')
 

@@ -128,6 +128,7 @@ const todayISO = () => new Date().toISOString().split('T')[0]
 export default function App() {
   const [tasks, setTasks] = useLocalStorage('lucys-tasks', LIFE_LIST_TASKS)
   const [seededVersion, setSeededVersion] = useLocalStorage('lucys-tasks-version', 0)
+  const [top3, setTop3] = useLocalStorage('lucys-top3', {})
   const [activeTab, setActiveTab] = useState('today')
   const [modalOpen, setModalOpen] = useState(false)
   const [editTask, setEditTask] = useState(null)
@@ -157,7 +158,14 @@ export default function App() {
   }
 
   const toggleTask = (id) => setTasks(prev => prev.map(t => t.id === id ? { ...t, completed: !t.completed } : t))
-  const deleteTask = (id) => setTasks(prev => prev.filter(t => t.id !== id))
+  const deleteTask = (id) => {
+    setTasks(prev => prev.filter(t => t.id !== id))
+    setTop3(prev => {
+      const next = {}
+      Object.entries(prev).forEach(([day, ids]) => { next[day] = ids.filter(x => x !== id) })
+      return next
+    })
+  }
   const updateTaskDate = (id, date) => setTasks(prev => prev.map(t => t.id === id ? { ...t, dueDate: date } : t))
   const bulkAdd = (newTasks) => setTasks(prev => [...newTasks, ...prev])
 
@@ -190,7 +198,7 @@ export default function App() {
       {/* Content */}
       <main style={s.main}>
         {activeTab === 'today' && (
-          <TodayView tasks={tasks} onToggle={toggleTask} onPickTop3={() => setActiveTab('tasks')} />
+          <TodayView tasks={tasks} onToggle={toggleTask} top3={top3} setTop3={setTop3} />
         )}
         {activeTab === 'tasks' && (
           <TaskList tasks={tasks} onToggle={toggleTask} onEdit={openEdit} onDelete={deleteTask} onAdd={openAdd} onUpdateDate={updateTaskDate} />

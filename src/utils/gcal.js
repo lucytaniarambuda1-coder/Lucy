@@ -22,5 +22,6 @@ export function buildGCalUrl(task) {
     dates = `${t.toISOString().split('T')[0].replace(/-/g, '')}/${n.toISOString().split('T')[0].replace(/-/g, '')}`
   }
 
-  return `${base}?action=TEMPLATE&text=${title}&dates=${dates}&details=${desc}`
+  const tz = encodeURIComponent(Intl.DateTimeFormat().resolvedOptions().timeZone)
+  return `${base}?action=TEMPLATE&text=${title}&dates=${dates}&details=${desc}&ctz=${tz}`
 }

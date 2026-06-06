@@ -1,0 +1,12 @@
+{
+  "name": "Lucy's World",
+  "short_name": "Lucy's World",
+  "description": "Lucy's personal life management system",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F3FF",
+  "theme_color": "#7C3AED",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

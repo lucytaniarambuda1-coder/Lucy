@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { useLocalStorage } from '../hooks/useLocalStorage'
 
 const PRESET_HABITS = [
-  { id: 'water',     color: '#0EA5E9', name: 'Drink 8 glasses of water' },
-  { id: 'exercise',  color: '#10B981', name: 'Exercise 30 minutes' },
-  { id: 'read',      color: '#8B5CF6', name: 'Read for 20 minutes' },
-  { id: 'meditate',  color: '#EC4899', name: 'Meditate' },
-  { id: 'sleep',     color: '#6366F1', name: 'Sleep by 10pm' },
-  { id: 'gratitude', color: '#F59E0B', name: 'Write 3 gratitudes' },
-  { id: 'vitamins',  color: '#EF4444', name: 'Take vitamins' },
-  { id: 'skincare',  color: '#F472B6', name: 'Skincare routine' },
+  { id: 'prayer',   color: '#A78BFA', name: 'Daily prayer' },
+  { id: 'bible',    color: '#6366F1', name: 'Bible study' },
+  { id: 'journal',  color: '#EC4899', name: 'Journaling' },
+  { id: 'exercise', color: '#10B981', name: 'Exercise' },
+  { id: 'water',    color: '#0EA5E9', name: 'Water intake' },
+  { id: 'vitamins', color: '#F59E0B', name: 'Vitamins' },
+  { id: 'skincare', color: '#F472B6', name: 'Skincare routine' },
+  { id: 'gratitude',color: '#EF4444', name: 'Gratitude' },
 ]
 
 const todayStr = () => new Date().toDateString()
@@ -50,15 +50,24 @@ export default function HabitsView() {
     return s
   }
 
-  const todayDone = habits.filter(h => isDone(h.id, today)).length
-  const pct = habits.length ? Math.round((todayDone / habits.length) * 100) : 0
-
   const addHabit = () => {
     if (!newName.trim()) return
     setHabits(prev => [...prev, { id: `h_${Date.now()}`, name: newName.trim(), color: newColor }])
     setNewName('')
     setShowAdd(false)
   }
+
+  const deleteHabit = (id) => {
+    setHabits(prev => prev.filter(h => h.id !== id))
+    setCompletions(prev => {
+      const next = { ...prev }
+      Object.keys(next).forEach(k => { if (k.startsWith(`${id}__`)) delete next[k] })
+      return next
+    })
+  }
+
+  const todayDone = habits.filter(h => isDone(h.id, today)).length
+  const pct = habits.length ? Math.round((todayDone / habits.length) * 100) : 0
 
   return (
     <div style={s.page}>
@@ -105,19 +114,18 @@ export default function HabitsView() {
           const s7 = streak(h.id)
           return (
             <div key={h.id} style={s.habitCard}>
-              <div style={s.habitLeft}>
-                <button
-                  style={{ ...s.check, ...(done ? { background: h.color, borderColor: h.color } : { borderColor: h.color }) }}
-                  onClick={() => toggle(h.id)}
-                >
-                  {done && <span style={s.checkMark}>✓</span>}
-                </button>
-                <div>
-                  <div style={{ ...s.habitName, ...(done ? { textDecoration: 'line-through', color: 'var(--text-3)' } : {}) }}>
-                    {h.name}
-                  </div>
-                  {s7 > 0 && <div style={{ ...s.streakLabel, color: h.color }}>{s7} day streak</div>}
+              <button
+                style={{ ...s.check, ...(done ? { background: h.color, borderColor: h.color } : { borderColor: h.color }) }}
+                onClick={() => toggle(h.id)}
+              >
+                {done && <span style={s.checkMark}>✓</span>}
+              </button>
+
+              <div style={s.habitInfo}>
+                <div style={{ ...s.habitName, ...(done ? { textDecoration: 'line-through', color: 'var(--text-3)' } : {}) }}>
+                  {h.name}
                 </div>
+                {s7 > 0 && <div style={{ ...s.streakLabel, color: h.color }}>{s7} day streak</div>}
               </div>
 
               <div style={s.dots}>
@@ -132,6 +140,8 @@ export default function HabitsView() {
                   />
                 ))}
               </div>
+
+              <button style={s.deleteBtn} onClick={() => deleteHabit(h.id)} title="Remove habit">×</button>
             </div>
           )
         })}
@@ -179,9 +189,8 @@ const s = {
   habitCard: {
     background: 'white', borderRadius: 'var(--radius)',
     padding: '12px 14px', boxShadow: 'var(--shadow)',
-    display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 10,
+    display: 'flex', alignItems: 'center', gap: 10,
   },
-  habitLeft: { display: 'flex', alignItems: 'center', gap: 10, flex: 1, minWidth: 0 },
   check: {
     width: 24, height: 24, borderRadius: '50%',
     border: '2px solid', flexShrink: 0,
@@ -189,8 +198,14 @@ const s = {
     background: 'white', cursor: 'pointer',
   },
   checkMark: { color: 'white', fontSize: 12, fontWeight: 700 },
+  habitInfo: { flex: 1, minWidth: 0 },
   habitName: { fontSize: 14, fontWeight: 500, color: 'var(--text)' },
   streakLabel: { fontSize: 11, fontWeight: 600, marginTop: 2 },
   dots: { display: 'flex', gap: 3, flexShrink: 0 },
   dot: { width: 8, height: 8, borderRadius: '50%' },
+  deleteBtn: {
+    fontSize: 16, color: '#D1D5DB', cursor: 'pointer',
+    padding: '2px 4px', border: 'none', background: 'none',
+    flexShrink: 0, lineHeight: 1,
+  },
 }

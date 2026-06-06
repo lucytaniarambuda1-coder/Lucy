@@ -3,10 +3,6 @@ import { buildGCalUrl } from '../utils/gcal'
 
 const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const PRI_COLORS = { high: '#EF4444', medium: '#F59E0B', low: '#10B981' }
-const CAT_COLORS = {
-  home: '#0EA5E9', work: '#059669', personal: '#A78BFA',
-  school: '#6366F1', health: '#EF4444', finance: '#D97706',
-}
 
 function getWeekStart(offset = 0) {
   const d = new Date()
@@ -26,7 +22,7 @@ function fmtShort(date) { return date.toLocaleDateString('en-US', { month: 'shor
 
 export default function WeeklyPlanner({ tasks, onAdd, onToggle }) {
   const [weekOffset, setWeekOffset] = useState(0)
-  const [expandedDay, setExpandedDay] = useState(null)
+  const [expandedDays, setExpandedDays] = useState(() => ({ [fmt(new Date())]: true }))
   const [quickDay, setQuickDay] = useState(null)
   const [quickTitle, setQuickTitle] = useState('')
 
@@ -45,6 +41,16 @@ export default function WeeklyPlanner({ tasks, onAdd, onToggle }) {
     onAdd({ title: quickTitle.trim(), dueDate: dateStr, category: 'work', priority: 'medium', description: '', dueTime: '', tags: [] })
     setQuickTitle('')
     setQuickDay(null)
+  }
+
+  const toggleDay = (dateStr) => {
+    setExpandedDays(prev => ({ ...prev, [dateStr]: !prev[dateStr] }))
+  }
+
+  const openQuickAdd = (dateStr) => {
+    setExpandedDays(prev => ({ ...prev, [dateStr]: true }))
+    setQuickDay(dateStr)
+    setQuickTitle('')
   }
 
   const weekLabel = () => {
@@ -68,12 +74,12 @@ export default function WeeklyPlanner({ tasks, onAdd, onToggle }) {
         const isToday = dateStr === today
         const pending = dayTasks.filter(t => !t.completed)
         const done = dayTasks.filter(t => t.completed)
-        const isExpanded = expandedDay === dateStr
+        const isExpanded = expandedDays[dateStr] ?? false
         const isAddingHere = quickDay === dateStr
 
         return (
           <div key={dateStr} style={{ ...s.dayCard, ...(isToday ? s.todayCard : {}) }}>
-            <div style={s.dayHeader} onClick={() => setExpandedDay(isExpanded ? null : dateStr)}>
+            <div style={s.dayHeader} onClick={() => toggleDay(dateStr)}>
               <div>
                 <div style={{ ...s.dayName, ...(isToday ? s.todayName : {}) }}>
                   {dayName}{isToday ? ' (Today)' : ''}
@@ -88,44 +94,45 @@ export default function WeeklyPlanner({ tasks, onAdd, onToggle }) {
               </div>
             </div>
 
-            {/* Always show tasks if any, or drop zone */}
-            <div style={s.dayBody}>
-              {dayTasks.length === 0 && !isAddingHere ? (
-                <div style={s.dropZone}>Drop tasks here</div>
-              ) : (
-                <div style={s.taskList}>
-                  {pending.map(task => (
-                    <DayTask key={task.id} task={task} onToggle={onToggle} />
-                  ))}
-                  {done.map(task => (
-                    <DayTask key={task.id} task={task} onToggle={onToggle} done />
-                  ))}
-                </div>
-              )}
+            {isExpanded && (
+              <div style={s.dayBody}>
+                {dayTasks.length === 0 && !isAddingHere ? (
+                  <div style={s.emptyDay}>No tasks scheduled</div>
+                ) : (
+                  <div style={s.taskList}>
+                    {pending.map(task => (
+                      <DayTask key={task.id} task={task} onToggle={onToggle} />
+                    ))}
+                    {done.map(task => (
+                      <DayTask key={task.id} task={task} onToggle={onToggle} done />
+                    ))}
+                  </div>
+                )}
 
-              {/* Quick add row */}
-              {isAddingHere ? (
-                <div style={s.quickRow}>
-                  <input
-                    style={s.quickInput}
-                    placeholder="Task title..."
-                    value={quickTitle}
-                    autoFocus
-                    onChange={e => setQuickTitle(e.target.value)}
-                    onKeyDown={e => {
-                      if (e.key === 'Enter') handleQuickAdd(dateStr)
-                      if (e.key === 'Escape') setQuickDay(null)
-                    }}
-                  />
-                  <button style={s.quickSave} onClick={() => handleQuickAdd(dateStr)}>Add</button>
-                  <button style={s.quickCancel} onClick={() => setQuickDay(null)}>×</button>
-                </div>
-              ) : (
-                <button style={s.addDayBtn} onClick={() => { setQuickDay(dateStr); setQuickTitle('') }}>
-                  + Add task...
-                </button>
-              )}
-            </div>
+                {/* Quick add row */}
+                {isAddingHere ? (
+                  <div style={s.quickRow}>
+                    <input
+                      style={s.quickInput}
+                      placeholder="Task title..."
+                      value={quickTitle}
+                      autoFocus
+                      onChange={e => setQuickTitle(e.target.value)}
+                      onKeyDown={e => {
+                        if (e.key === 'Enter') handleQuickAdd(dateStr)
+                        if (e.key === 'Escape') setQuickDay(null)
+                      }}
+                    />
+                    <button style={s.quickSave} onClick={() => handleQuickAdd(dateStr)}>Add</button>
+                    <button style={s.quickCancel} onClick={() => setQuickDay(null)}>×</button>
+                  </div>
+                ) : (
+                  <button style={s.addDayBtn} onClick={() => openQuickAdd(dateStr)}>
+                    + Add task...
+                  </button>
+                )}
+              </div>
+            )}
           </div>
         )
       })}
@@ -193,13 +200,12 @@ const s = {
     background: 'var(--primary-pale)', padding: '2px 8px', borderRadius: 99,
   },
   chevron: { fontSize: 10, color: 'var(--text-3)' },
-  dayBody: { padding: '0 14px 12px' },
-  dropZone: {
-    border: '1.5px dashed var(--border)', borderRadius: 8,
-    padding: '20px', textAlign: 'center',
-    color: 'var(--text-3)', fontSize: 13, marginBottom: 8,
+  dayBody: { padding: '0 14px 12px', borderTop: '1px solid #F9FAFB' },
+  emptyDay: {
+    padding: '16px 0 8px', textAlign: 'center',
+    color: 'var(--text-3)', fontSize: 13,
   },
-  taskList: { display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 8 },
+  taskList: { display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 8, paddingTop: 10 },
   dayTask: {
     display: 'flex', alignItems: 'center', gap: 8,
     padding: '8px 10px', background: '#F9FAFB',
@@ -214,7 +220,7 @@ const s = {
   },
   checkDone: { background: 'var(--primary)', borderColor: 'var(--primary)' },
   checkMark: { color: 'white', fontSize: 10, fontWeight: 700 },
-  taskTitle: { flex: 1, fontSize: 13, color: 'var(--text)' },
+  taskTitle: { flex: 1, fontSize: 13, color: 'var(--text)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' },
   priDot: { width: 7, height: 7, borderRadius: '50%', flexShrink: 0 },
   gcalLink: {
     fontSize: 10, fontWeight: 700, color: '#059669',
@@ -236,7 +242,7 @@ const s = {
     cursor: 'pointer', border: 'none', background: 'none',
   },
   addDayBtn: {
-    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+    display: 'flex', alignItems: 'center',
     width: '100%', padding: '9px 12px', marginTop: 4,
     border: '1.5px solid var(--border)', borderRadius: 8,
     fontSize: 13, color: 'var(--text-2)', background: 'white',
