@@ -7,6 +7,9 @@ import HabitsView from './components/HabitsView'
 import NotesView from './components/NotesView'
 import FocusView from './components/FocusView'
 import LoveLanguageView from './components/LoveLanguageView'
+import AttachmentView from './components/AttachmentView'
+import ProjectsView from './components/ProjectsView'
+import SyncBadge from './components/SyncBadge'
 import TaskModal from './components/TaskModal'
 import { useLocalStorage } from './hooks/useLocalStorage'
 
@@ -122,7 +125,9 @@ const TABS = [
   { id: 'habits', label: 'Habits' },
   { id: 'notes', label: 'Notes' },
   { id: 'focus', label: 'Focus' },
+  { id: 'projects', label: 'Projects' },
   { id: 'love', label: 'Love Languages' },
+  { id: 'attachment', label: 'Attachment' },
 ]
 
 const todayISO = () => new Date().toISOString().split('T')[0]
@@ -178,6 +183,7 @@ export default function App() {
       {/* Header */}
       <header style={s.header}>
         <span style={s.logo}>Lucy's World</span>
+        <SyncBadge />
       </header>
 
       {/* Tabs */}
@@ -220,8 +226,14 @@ export default function App() {
         {activeTab === 'focus' && (
           <FocusView />
         )}
+        {activeTab === 'projects' && (
+          <ProjectsView tasks={tasks} />
+        )}
         {activeTab === 'love' && (
           <LoveLanguageView />
+        )}
+        {activeTab === 'attachment' && (
+          <AttachmentView />
         )}
       </main>
 
