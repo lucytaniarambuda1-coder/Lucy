@@ -1,0 +1,371 @@
+{
+  "updated": "2026-10-25",
+  "areas": [
+    { "id": "flow", "name": "Flow Corner", "color": "#E8407F" },
+    { "id": "books", "name": "Books & Writing", "color": "#DB2777" },
+    { "id": "church", "name": "Church", "color": "#2563EB" },
+    { "id": "study", "name": "Studies", "color": "#7C3AED" },
+    { "id": "home", "name": "Home & Family", "color": "#059669" },
+    { "id": "life", "name": "Personal", "color": "#F59E0B" }
+  ],
+  "projects": [
+    {
+      "id": "get-hired",
+      "name": "Get Hired with AI",
+      "area": "flow",
+      "status": "launching",
+      "priority": 1,
+      "summary": "R149 founding / R249 digital kit for SA job seekers: guide, 3 CV templates, 45-prompt pack, opportunities sheet, 7-day plan.",
+      "nextAction": "Update the CV auto-reply in Meta Business Suite and point the Instagram bio link to /get-hired/",
+      "due": "2026-10-27",
+      "keyDates": [
+        { "date": "2026-10-28", "label": "Instagram launch posts start (12:00)" },
+        { "date": "2026-11-10", "label": "Last launch post" }
+      ],
+      "milestones": [
+        { "text": "Guide written (7 chapters) and designed PDF", "done": true },
+        { "text": "3 CV templates (Classic, Modern, Career changer)", "done": true },
+        { "text": "Prompt pack: 45 prompts, all tested in ChatGPT", "done": true },
+        { "text": "SA opportunities sheet (40 sites)", "done": true },
+        { "text": "Sales page live on flowcornerr.netlify.app/get-hired/", "done": true },
+        { "text": "6 Instagram launch posts built", "done": true },
+        { "text": "CV auto-reply + bio link updated in Meta", "done": false },
+        { "text": "Payment link (Yoco / PayFast / Gumroad) on the sales page", "done": false },
+        { "text": "2 real client before-and-afters (with written permission)", "done": false },
+        { "text": "First 50 founding buyers", "done": false }
+      ],
+      "waitingOnLucy": [
+        "Paste the new CV auto-reply into Meta and change the bio link",
+        "Choose a payment provider (Yoco, PayFast or Gumroad)",
+        "Ask 2 clients for permission to use their before-and-after"
+      ],
+      "links": [
+        { "label": "Sales page", "url": "https://flowcornerr.netlify.app/get-hired/" },
+        { "label": "Guide (Doc)", "url": "https://claude.ai/artifact/J66RFsQesGNobKcEiJUoCk" },
+        { "label": "Prompt pack (Doc)", "url": "https://claude.ai/artifact/N6G5xY2u5oZ35wDiksXrcD" }
+      ],
+      "folder": "Flow Corner/Get Hired with AI",
+      "tag": "flowcorner",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "book-ppp",
+      "name": "Passion. Purpose. Peace.",
+      "area": "books",
+      "status": "launching",
+      "priority": 1,
+      "summary": "Book 1, a 65-page Kindle devotional ($2.99). Published on Amazon, on sale 14 November 2026.",
+      "nextAction": "Post the book launch teasers from the posting schedule",
+      "due": "2026-11-14",
+      "keyDates": [{ "date": "2026-11-14", "label": "Book goes on sale on Amazon" }],
+      "milestones": [
+        { "text": "Writing finished", "done": true },
+        { "text": "ISBN and barcodes", "done": true },
+        { "text": "Published on Amazon Kindle", "done": true },
+        { "text": "Book launch posts made (Lucy Social Media / Book launch posts)", "done": true },
+        { "text": "Save the cover image file in the Books folder", "done": false },
+        { "text": "Launch day posts and church announcement", "done": false },
+        { "text": "Ask first readers for Amazon reviews", "done": false },
+        { "text": "Decide on a paperback / local print run", "done": false }
+      ],
+      "waitingOnLucy": ["Send the cover image file (also needed for the Write & Publish kit)"],
+      "links": [{ "label": "Amazon", "url": "https://www.amazon.com/dp/B0HNTZL5BB" }],
+      "folder": "Books/Passion Purpose Peace",
+      "tag": "book",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "masters",
+      "name": "Master's in Industrial Psychology (UNISA)",
+      "area": "study",
+      "status": "active",
+      "priority": 1,
+      "summary": "Research master's. Proposal revised after E. Nel's October feedback; colloquium presentation prepared.",
+      "nextAction": "Finish the October revisions to the research proposal and send them to the supervisor",
+      "due": null,
+      "keyDates": [
+        { "date": "2026-10-27", "label": "UNISA CGS workshop: Women in the 4th Industrial Revolution (10:00)" },
+        { "date": "2026-10-27", "label": "UNISA CGS workshop: Moving from Codes to Categories (18:00)" }
+      ],
+      "milestones": [
+        { "text": "Research outline", "done": true },
+        { "text": "Proposal drafts (July and August feedback rounds)", "done": true },
+        { "text": "References fixed (October 2026)", "done": true },
+        { "text": "Colloquium presentation", "done": true },
+        { "text": "Proposal approved", "done": false },
+        { "text": "Ethics clearance", "done": false },
+        { "text": "Data collection", "done": false },
+        { "text": "Dissertation chapters 1 to 5", "done": false },
+        { "text": "Submission", "done": false }
+      ],
+      "waitingOnLucy": ["Tell me the colloquium date and the submission deadline so I can set due dates"],
+      "links": [],
+      "folder": "UNISA Masters",
+      "tag": "masters",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "young-adults",
+      "name": "Young Adults Ministry",
+      "area": "church",
+      "status": "active",
+      "priority": 1,
+      "summary": "Pastor-led ministry for ages 25 to 40 at CFC Soweto (Exodus 33:14-15). Approved by the pastors on 19 October.",
+      "nextAction": "Sunday follow-up with the pastors, then confirm the core team and launch plan",
+      "due": "2026-11-28",
+      "keyDates": [
+        { "date": "2026-10-25", "label": "Follow-up with the pastors" },
+        { "date": "2026-11-28", "label": "Launch (Saturday)" },
+        { "date": "2026-12-04", "label": "First Friday prayer night" }
+      ],
+      "milestones": [
+        { "text": "Pitch deck for the pastors", "done": true },
+        { "text": "Pastors approved (19 Oct)", "done": true },
+        { "text": "Joiners deck with prayer plan", "done": true },
+        { "text": "Core team confirmed (Lucy, Mukhethwa, Fhumu, Latty + more)", "done": false },
+        { "text": "Launch event planned and announced", "done": false },
+        { "text": "WhatsApp prayer chain and prayer partners set up", "done": false },
+        { "text": "Launch on Saturday 28 November", "done": false }
+      ],
+      "waitingOnLucy": ["Tell me what came out of the follow-up with the pastors"],
+      "links": [
+        { "label": "Pastors deck", "url": "https://claude.ai/artifact/8JgSJKrsQwkpM5uBjH3N2H" },
+        { "label": "Joiners deck", "url": "https://claude.ai/artifact/TzkGKLnraYrkURj8NrYevX" },
+        { "label": "SCFC Project Hub", "url": "https://claude.ai/artifact/ES5nKuhqpHbWgQgdYkCAmH" }
+      ],
+      "folder": "CFCI Soweto/Young Adults Ministry",
+      "tag": "church",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "cafe",
+      "name": "Flow Corner Café, Leratong City Mall",
+      "area": "flow",
+      "status": "planning",
+      "priority": 2,
+      "summary": "5-PC internet café and digital learning hub. Under R30k of own funds, so it needs demand proof, a written quote and funding (NYDA) before any lease.",
+      "nextAction": "Get a written rental quote from the mall's leasing agent",
+      "due": null,
+      "keyDates": [{ "date": "2026-10-29", "label": "Leratong City Mall opens (reported)" }],
+      "milestones": [
+        { "text": "Launch roadmap and viability workbook", "done": true },
+        { "text": "Written rental quote from the mall", "done": false },
+        { "text": "Demand tests (count foot traffic, ask shoppers)", "done": false },
+        { "text": "Register the business with CIPC + SARS", "done": false },
+        { "text": "Business bank account", "done": false },
+        { "text": "NYDA funding application", "done": false },
+        { "text": "Go / no-go decision on the lease", "done": false }
+      ],
+      "waitingOnLucy": ["Real rent and set-up figures for the viability workbook"],
+      "links": [{ "label": "Launch roadmap (Doc)", "url": "https://claude.ai/artifact/Rre1e6NkZ6LxHyQ3rAhtpg" }],
+      "folder": "Flow Corner",
+      "tag": "flowcorner",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "write-publish",
+      "name": "Write & Publish service",
+      "area": "flow",
+      "status": "active",
+      "priority": 2,
+      "summary": "Flow Corner offer for SA first-time writers: free hub articles, a paid DIY kit and 3 paid services (publishing set-up, book coaching, launch marketing). Uses my book as the case study.",
+      "nextAction": "Set prices for the kit and the 3 services",
+      "due": null,
+      "keyDates": [],
+      "milestones": [
+        { "text": "Drafts written (Doc)", "done": true },
+        { "text": "Prices set", "done": false },
+        { "text": "Re-check NLSA ISBN and KDP facts", "done": false },
+        { "text": "Kit PDF, templates and planner built", "done": false },
+        { "text": "Sales page on the Flow Corner site", "done": false },
+        { "text": "First client", "done": false }
+      ],
+      "waitingOnLucy": ["Prices for the kit and each service", "Book cover image file"],
+      "links": [{ "label": "Drafts (Doc)", "url": "https://claude.ai/artifact/2mQHPPV1gqCojUJg8bK7Fm" }],
+      "folder": "Flow Corner/Write and Publish",
+      "tag": "flowcorner",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "flow-site",
+      "name": "Flow Corner website & services",
+      "area": "flow",
+      "status": "ongoing",
+      "priority": 2,
+      "summary": "flowcornerr.netlify.app: CV revamps, LinkedIn, career guidance, Learning Hub, Start a Business pages. Client CVs in Client Documents.",
+      "nextAction": "Fix the nav logo (still says \"Lucy M.\") and confirm the \"3 founding spots\" claim",
+      "due": null,
+      "keyDates": [],
+      "milestones": [
+        { "text": "Multi-page site, Learning Hub, free CV Check", "done": true },
+        { "text": "Start a Business section and funding guide (PR #5 merged)", "done": true },
+        { "text": "Price list on the site", "done": false },
+        { "text": "Flow Corner email address", "done": false },
+        { "text": "Custom domain (e.g. flowcornerr.co.za)", "done": false },
+        { "text": "3 to 5 paying clients with testimonials", "done": false }
+      ],
+      "waitingOnLucy": ["Is the \"3 founding spots\" offer still true?"],
+      "links": [
+        { "label": "Website", "url": "https://flowcornerr.netlify.app" },
+        { "label": "Instagram", "url": "https://www.instagram.com/flow_cornerr/" }
+      ],
+      "folder": "Flow Corner",
+      "tag": "flowcorner",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram pages",
+      "area": "flow",
+      "status": "ongoing",
+      "priority": 3,
+      "summary": "@flow_cornerr (business) and lucytaniarr (personal brand, books, faith). Weekly batch on Sunday afternoons.",
+      "nextAction": "Sunday batch: schedule next week's posts for both pages",
+      "due": null,
+      "keyDates": [],
+      "milestones": [
+        { "text": "Highlight covers and profile photo", "done": true },
+        { "text": "Post batches 1 to 3 and posting order", "done": true },
+        { "text": "Record follower counts monthly", "done": false }
+      ],
+      "waitingOnLucy": [],
+      "links": [],
+      "folder": "Flow Corner/Instagram Posts",
+      "tag": "instagram",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "church-admin-kit",
+      "name": "Church Admin Kit",
+      "area": "flow",
+      "status": "active",
+      "priority": 3,
+      "summary": "Church Admin Guide PDF plus an attendance tracker workbook (with an example copy).",
+      "nextAction": "Decide how to sell or share the kit",
+      "due": null,
+      "keyDates": [],
+      "milestones": [
+        { "text": "Church Admin Guide PDF", "done": true },
+        { "text": "Attendance tracker + example", "done": true },
+        { "text": "Price and sales page", "done": false }
+      ],
+      "waitingOnLucy": ["Is this a paid product, or free for CFC churches?"],
+      "links": [],
+      "folder": "Flow Corner/Church Admin Kit",
+      "tag": "flowcorner",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "cfci-admin",
+      "name": "CFCI Soweto & Bible College admin",
+      "area": "church",
+      "status": "ongoing",
+      "priority": 2,
+      "summary": "Daily payment sync, weekly payments report, Growth Track, church website and 2027 Year Plan. Weekly check on Monday evenings.",
+      "nextAction": "Monday check: clear the payment review queue and follow up on outstanding fees",
+      "due": null,
+      "keyDates": [],
+      "milestones": [
+        { "text": "Daily payment sync automated", "done": true },
+        { "text": "2027 Year Plan page for heads of department", "done": true },
+        { "text": "Membership Declaration page (PR #5, open since August)", "done": false }
+      ],
+      "waitingOnLucy": ["Merge or close the Membership Declaration page PR on the church site"],
+      "links": [{ "label": "Membership page PR", "url": "https://github.com/lucytaniarambuda1-coder/soweto-cfc/pull/5" }],
+      "folder": "CFCI Soweto",
+      "tag": "church",
+      "updated": "2026-10-18"
+    },
+    {
+      "id": "book-mmitm",
+      "name": "Meet Me in the Middle",
+      "area": "books",
+      "status": "active",
+      "priority": 3,
+      "summary": "Book 2, still editing. Tue, Thu and Sat writing sessions.",
+      "nextAction": "Write the one-sentence summary of what the book is about",
+      "due": null,
+      "keyDates": [],
+      "milestones": [
+        { "text": "Finish the draft", "done": false },
+        { "text": "Big-picture edit", "done": false },
+        { "text": "Beta readers", "done": false },
+        { "text": "Proofread", "done": false },
+        { "text": "Cover and publish", "done": false }
+      ],
+      "waitingOnLucy": ["One sentence on what the book is about, and a target date for the draft"],
+      "links": [],
+      "folder": "Books",
+      "tag": "book",
+      "updated": "2026-10-10"
+    },
+    {
+      "id": "house",
+      "name": "House project",
+      "area": "home",
+      "status": "active",
+      "priority": 3,
+      "summary": "Home improvements, built-ins first.",
+      "nextAction": "Built-in kitchen cupboards",
+      "due": null,
+      "keyDates": [],
+      "milestones": [
+        { "text": "Built-in kitchen cupboards", "done": false },
+        { "text": "Bedroom built-in cupboards", "done": false },
+        { "text": "Garage", "done": false },
+        { "text": "Buy the ORA 5", "done": false }
+      ],
+      "waitingOnLucy": [],
+      "links": [],
+      "folder": "",
+      "tag": "renovation",
+      "updated": "2026-10-14"
+    },
+    {
+      "id": "mom-tests",
+      "name": "Mom's Grade 5 tests",
+      "area": "home",
+      "status": "done",
+      "priority": 3,
+      "summary": "Term 4 History and Geography tests with memos (Word + PDF).",
+      "nextAction": "",
+      "due": null,
+      "keyDates": [],
+      "milestones": [
+        { "text": "Term 4 History test + memo", "done": true },
+        { "text": "Term 4 Geography test + memo", "done": true }
+      ],
+      "waitingOnLucy": [],
+      "links": [],
+      "folder": "Mom - School Tests",
+      "tag": "",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "lucys-world",
+      "name": "Lucy's World app",
+      "area": "life",
+      "status": "ongoing",
+      "priority": 3,
+      "summary": "This app: tasks, habits, focus, notes, assessments, and now the project tracker. Code on GitHub (Lucy repo), live at lucy-s.netlify.app.",
+      "nextAction": "",
+      "due": null,
+      "keyDates": [],
+      "milestones": [
+        { "text": "Cloud sync across devices", "done": true },
+        { "text": "Project manager dashboard", "done": true }
+      ],
+      "waitingOnLucy": [],
+      "links": [{ "label": "GitHub", "url": "https://github.com/lucytaniarambuda1-coder/Lucy" }],
+      "folder": "Lucy's Project/lucys-world",
+      "tag": "",
+      "updated": "2026-10-25"
+    }
+  ],
+  "log": [
+    { "date": "2026-10-25", "text": "Project tracker set up with 14 projects from my folders, notes and past sessions." },
+    { "date": "2026-10-24", "text": "Get Hired with AI sales page went live; launch posts ready for 28 Oct." },
+    { "date": "2026-10-24", "text": "Started Write & Publish and the Leratong café plan." },
+    { "date": "2026-10-19", "text": "Pastors approved the Young Adults Ministry." }
+  ]
+}
