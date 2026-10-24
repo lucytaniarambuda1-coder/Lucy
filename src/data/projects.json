@@ -563,13 +563,11 @@
           "done": true
         },
         {
-          "text": "Combine the Membership Declaration (PR #5) with the Growth Track Step 2 assessment page — built, waiting for Lucy to review the preview and run the Supabase migration",
-          "done": false
+          "text": "Membership Declaration combined with the Growth Track Step 2 assessment page (PR #5 merged)",
+          "done": true
         }
       ],
-      "waitingOnLucy": [
-        "Review PR #5 preview (Become a Member section after Step 2 results), run the membership_declarations migration in Supabase, then approve the merge"
-      ],
+      "waitingOnLucy": [],
       "links": [
         {
           "label": "Membership PR #5",
@@ -717,6 +715,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-10-25",
+      "text": "PR #5 merged: the Step 2 page now has a \"Become a Member\" section after the results, and the Supabase table is set up."
+    },
     {
       "date": "2026-10-25",
       "text": "Membership Declaration moved onto the Growth Track Step 2 page: it now shows as a \"Become a Member\" section after the results. PR #5 updated and ready for review."
