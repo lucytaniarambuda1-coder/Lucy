@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "areas": [
     {
       "id": "flow",
@@ -448,6 +448,10 @@
           "done": true
         },
         {
+          "text": "Brand Book v1 (logo, colours, type, voice, Instagram, café)",
+          "done": true
+        },
+        {
           "text": "Price list on the site",
           "done": false
         },
@@ -464,7 +468,9 @@
           "done": false
         }
       ],
-      "waitingOnLucy": [],
+      "waitingOnLucy": [
+        "Approve or edit the draft mission statement, café sign line and hashtags in the Brand Book"
+      ],
       "links": [
         {
           "label": "Website",
@@ -473,11 +479,15 @@
         {
           "label": "Instagram",
           "url": "https://www.instagram.com/flow_cornerr/"
+        },
+        {
+          "label": "Brand Book",
+          "url": "https://claude.ai/artifact/6dS2VPp1ECTjRGA3pyHcGe"
         }
       ],
       "folder": "Flow Corner",
       "tag": "flowcorner",
-      "updated": "2026-10-25"
+      "updated": "2026-10-26"
     },
     {
       "id": "instagram",
@@ -715,6 +725,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-10-26",
+      "text": "Flow Corner Brand Book v1 published (logo, colours, type, shapes, voice, Instagram recipes, café applications). Copy saved as Flow-Corner-Brand-Book.html in the Flow Corner folder."
+    },
     {
       "date": "2026-10-25",
       "text": "PR #5 merged: the Step 2 page now has a \"Become a Member\" section after the results, and the Supabase table is set up."
