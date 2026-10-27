@@ -382,7 +382,7 @@
       "status": "active",
       "priority": 2,
       "summary": "Flow Corner's home for writers (renamed from Write & Publish). Phase 1, built: 5 free Learning Hub guides, the Author Corner kit (25-page guide, 40 AI prompts, 3 Word templates, Book Planner) and 3 services. Phase 2: the Author Corner app, an Atticus-style write-format-export tool (roadmap Doc).",
-      "nextAction": "Upload flowcornerr-site-v3-with-author-corner.zip to Netlify",
+      "nextAction": "Set prices for the kit and the 3 services",
       "due": null,
       "keyDates": [],
       "milestones": [
@@ -403,8 +403,8 @@
           "done": true
         },
         {
-          "text": "Sales page and free guides on the Flow Corner site (upload v3 zip)",
-          "done": false
+          "text": "Sales page and free guides live on the Flow Corner site",
+          "done": true
         },
         {
           "text": "Prices set",
@@ -437,6 +437,10 @@
         "CIPC search for the Author Corner trade mark before spending on the brand"
       ],
       "links": [
+        {
+          "label": "Author Corner page",
+          "url": "https://flowcornerr.netlify.app/author-corner/"
+        },
         {
           "label": "App roadmap (Doc)",
           "url": "https://claude.ai/artifact/1RGYXC9qfvUaw8DiG9GvgU"
@@ -749,6 +753,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-10-27",
+      "text": "Author Corner is live on flowcornerr.netlify.app: sales page at /author-corner/ and 5 free guides at /learning-hub/author-corner/."
+    },
     {
       "date": "2026-10-27",
       "text": "Write & Publish renamed Author Corner: kit, PDFs, templates and site rebuilt (v3 zip with /author-corner/). Author Corner app roadmap written from the Author Studio blueprint."
