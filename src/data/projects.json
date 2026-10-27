@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "areas": [
     {
       "id": "flow",
@@ -377,12 +377,12 @@
     },
     {
       "id": "write-publish",
-      "name": "Write & Publish service",
+      "name": "Author Corner",
       "area": "flow",
       "status": "active",
       "priority": 2,
-      "summary": "Flow Corner offer for SA first-time writers: free hub articles, a paid DIY kit and 3 paid services (publishing set-up, book coaching, launch marketing). Uses my book as the case study.",
-      "nextAction": "Set prices for the kit and the 3 services",
+      "summary": "Flow Corner's home for writers (renamed from Write & Publish). Phase 1, built: 5 free Learning Hub guides, the Author Corner kit (25-page guide, 40 AI prompts, 3 Word templates, Book Planner) and 3 services. Phase 2: the Author Corner app, an Atticus-style write-format-export tool (roadmap Doc).",
+      "nextAction": "Upload flowcornerr-site-v3-with-author-corner.zip to Netlify",
       "due": null,
       "keyDates": [],
       "milestones": [
@@ -391,38 +391,64 @@
           "done": true
         },
         {
-          "text": "Prices set",
-          "done": false
-        },
-        {
           "text": "Re-check NLSA ISBN and KDP facts",
-          "done": false
+          "done": true
         },
         {
           "text": "Kit PDF, templates and planner built",
+          "done": true
+        },
+        {
+          "text": "Renamed to Author Corner",
+          "done": true
+        },
+        {
+          "text": "Sales page and free guides on the Flow Corner site (upload v3 zip)",
           "done": false
         },
         {
-          "text": "Sales page on the Flow Corner site",
+          "text": "Prices set",
           "done": false
         },
         {
           "text": "First client",
           "done": false
+        },
+        {
+          "text": "App roadmap written (phase 2)",
+          "done": true
+        },
+        {
+          "text": "Gate 1: first paying writers + café lease decided",
+          "done": false
+        },
+        {
+          "text": "App: interview 10 writers",
+          "done": false
+        },
+        {
+          "text": "App: 90-day MVP build and private beta",
+          "done": false
         }
       ],
       "waitingOnLucy": [
-        "Prices for the kit and each of the 3 services (your answer came through unclear)"
+        "Prices for the kit and each of the 3 services (site says 'message me for the price' for now)",
+        "App: start date, budget level (R4,100 / R9,200 / R18,500) and who builds it",
+        "CIPC search for the Author Corner trade mark before spending on the brand"
       ],
       "links": [
         {
-          "label": "Drafts (Doc)",
+          "label": "App roadmap (Doc)",
+          "url": "https://claude.ai/artifact/1RGYXC9qfvUaw8DiG9GvgU"
+        },
+        {
+          "label": "Article drafts (Doc)",
           "url": "https://claude.ai/artifact/2mQHPPV1gqCojUJg8bK7Fm"
         }
       ],
-      "folder": "Flow Corner/Write and Publish",
+      "folder": "Flow Corner/Author Corner",
       "tag": "flowcorner",
-      "updated": "2026-10-25"
+      "updated": "2026-10-27"
     },
     {
       "id": "flow-site",
@@ -723,6 +749,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-10-27",
+      "text": "Write & Publish renamed Author Corner: kit, PDFs, templates and site rebuilt (v3 zip with /author-corner/). Author Corner app roadmap written from the Author Studio blueprint."
+    },
     {
       "date": "2026-10-26",
       "text": "Lucy approved the Brand Book mission statement, café sign line and hashtags; draft label removed."
