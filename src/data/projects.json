@@ -45,7 +45,7 @@
       "keyDates": [
         {
           "date": "2026-10-28",
-          "label": "Instagram launch posts start (12:00)"
+          "label": "Instagram + Facebook launch posts start (moved to 15:00)"
         },
         {
           "date": "2026-11-10",
@@ -75,6 +75,10 @@
         },
         {
           "text": "6 Instagram launch posts built",
+          "done": true
+        },
+        {
+          "text": "6 launch posts scheduled in Business Suite (IG + FB Page), 28 Oct to 10 Nov",
           "done": true
         },
         {
@@ -523,7 +527,7 @@
       "status": "ongoing",
       "priority": 3,
       "summary": "@flow_cornerr (business) and lucytaniarr (personal brand, books, faith). Weekly batch on Sunday afternoons.",
-      "nextAction": "Sunday batch: schedule next week's posts for both pages",
+      "nextAction": "Schedule daily posts from 8 Nov onward (the queue runs out after 7 Nov)",
       "due": null,
       "keyDates": [],
       "milestones": [
@@ -761,6 +765,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-10-28",
+      "text": "Scheduled all 6 Get Hired launch posts to Instagram + the Facebook Page (post 1 today 15:00, then 30 Oct, 2, 4, 7, 10 Nov at 12:00). CV comment reply reworded to point to Message requests."
+    },
     {
       "date": "2026-10-28",
       "text": "Created Flow Corner Facebook Page, linked it to Instagram, turned on Instagram messages in Inbox. Business Suite automations now work."
