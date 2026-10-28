@@ -552,11 +552,16 @@
           "done": true
         },
         {
+          "text": "Batch 5 opportunities: Carousel A posted 28 Oct; FNB carousel scheduled 11 Nov 12:00",
+          "done": true
+        },
+        {
           "text": "Record follower counts monthly",
           "done": false
         }
       ],
       "waitingOnLucy": [
+        "Post the 4 job stories with link stickers from your phone TODAY (Sun International closes Fri 30 Oct). Images + links in Batch 5 - Opportunities",
         "Film Reel 1 for Tue 17 Nov (scripts in Batch 4 - November README)"
       ],
       "links": [
@@ -567,6 +572,10 @@
         {
           "label": "November plan + Reel scripts",
           "url": "Flow Corner/Instagram Posts/Batch 4 - November/README - November plan and Reel scripts.md"
+        },
+        {
+          "label": "Batch 5 opportunities (captions, story links)",
+          "url": "Flow Corner/Instagram Posts/Batch 5 - Opportunities/Opportunities-Captions.md"
         }
       ],
       "folder": "Flow Corner/Instagram Posts",
@@ -779,6 +788,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-10-28",
+      "text": "Batch 5 real opportunities: checked each advert on the official site (Sun International actually closes 30 Oct). Carousel A (Sun International, Sasol, Limpopo Public Works, Dis-Chem) published to IG + FB; FNB carousel scheduled Wed 11 Nov 12:00. Story images with link-sticker spaces made; stories need the phone."
+    },
     {
       "date": "2026-10-28",
       "text": "Scheduled all November posts from 8 to 25 Nov (IG + FB Page) and added TEST + HUB comment-to-DM automations. 27, 29, 30 Nov wait until about 31 Oct (Meta only schedules about 4 weeks ahead)."
