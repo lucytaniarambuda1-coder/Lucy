@@ -527,7 +527,7 @@
       "status": "ongoing",
       "priority": 3,
       "summary": "@flow_cornerr (business) and lucytaniarr (personal brand, books, faith). Weekly batch on Sunday afternoons.",
-      "nextAction": "From 31 Oct: schedule the last 3 November posts (27, 29, 30 Nov). Meta only allows about 4 weeks ahead",
+      "nextAction": "11 Nov: post the FNB link story (Batch 5 stories-v2). From 31 Oct: schedule 27, 29, 30 Nov posts",
       "due": "2026-10-31",
       "keyDates": [],
       "milestones": [
@@ -556,12 +556,15 @@
           "done": true
         },
         {
+          "text": "4 job stories with link stickers posted 28 Oct; OPEN NOW highlight created",
+          "done": true
+        },
+        {
           "text": "Record follower counts monthly",
           "done": false
         }
       ],
       "waitingOnLucy": [
-        "Post the 4 job stories with link stickers from your phone TODAY (Sun International closes Fri 30 Oct). Images + links in Batch 5 - Opportunities",
         "Film Reel 1 for Tue 17 Nov (scripts in Batch 4 - November README)"
       ],
       "links": [
@@ -788,6 +791,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-10-28",
+      "text": "Posted 4 job stories (Sun International, Sasol, Limpopo, Dis-Chem) with link stickers via iPhone Mirroring and saved them to a new OPEN NOW highlight. iPhone had iCloud Photos sync paused (mobile data); resumed for a day."
+    },
     {
       "date": "2026-10-28",
       "text": "Batch 5 real opportunities: checked each advert on the official site (Sun International actually closes 30 Oct). Carousel A (Sun International, Sasol, Limpopo Public Works, Dis-Chem) published to IG + FB; FNB carousel scheduled Wed 11 Nov 12:00. Story images with link-sticker spaces made; stories need the phone."
