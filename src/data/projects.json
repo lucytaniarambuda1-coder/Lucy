@@ -527,7 +527,7 @@
       "status": "ongoing",
       "priority": 3,
       "summary": "@flow_cornerr (business) and lucytaniarr (personal brand, books, faith). Weekly batch on Sunday afternoons.",
-      "nextAction": "Schedule daily posts from 8 Nov onward (the queue runs out after 7 Nov)",
+      "nextAction": "Finish scheduling 11-30 Nov posts (8-10 Nov done), add TEST + HUB keyword automations, film Reels from 17 Nov",
       "due": null,
       "keyDates": [],
       "milestones": [
@@ -544,15 +544,25 @@
           "done": true
         },
         {
+          "text": "Batch 4 (November): 6 new graphics, captions, calendar and 6 Reel scripts",
+          "done": true
+        },
+        {
           "text": "Record follower counts monthly",
           "done": false
         }
       ],
-      "waitingOnLucy": [],
+      "waitingOnLucy": [
+        "Film Reel 1 for Tue 17 Nov (scripts in Batch 4 - November README)"
+      ],
       "links": [
         {
           "label": "Flow Corner Facebook Page",
           "url": "https://www.facebook.com/profile.php?id=61595818027945"
+        },
+        {
+          "label": "November plan + Reel scripts",
+          "url": "Flow Corner/Instagram Posts/Batch 4 - November/README - November plan and Reel scripts.md"
         }
       ],
       "folder": "Flow Corner/Instagram Posts",
@@ -765,6 +775,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-10-28",
+      "text": "November Instagram plan made: 6 new graphics (Batch 4), calendar 8-30 Nov, 6 Reel scripts. 8-10 Nov scheduled; rest paused when Chrome disconnected."
+    },
     {
       "date": "2026-10-28",
       "text": "Scheduled all 6 Get Hired launch posts to Instagram + the Facebook Page (post 1 today 15:00, then 30 Oct, 2, 4, 7, 10 Nov at 12:00). CV comment reply reworded to point to Message requests."
