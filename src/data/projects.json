@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "areas": [
     {
       "id": "flow",
@@ -40,8 +40,8 @@
       "status": "launching",
       "priority": 1,
       "summary": "R149 founding / R249 digital kit for SA job seekers: guide, 3 CV templates, 45-prompt pack, opportunities sheet, 7-day plan.",
-      "nextAction": "Update the CV auto-reply in Meta Business Suite and point the Instagram bio link to /get-hired/",
-      "due": "2026-10-27",
+      "nextAction": "Set up Yoco and add the payment link to the sales page",
+      "due": null,
       "keyDates": [
         {
           "date": "2026-10-28",
@@ -78,8 +78,8 @@
           "done": true
         },
         {
-          "text": "CV auto-reply + bio link updated in Meta",
-          "done": false
+          "text": "CV auto-reply live (comment-to-DM, tested) + bio link to /get-hired/",
+          "done": true
         },
         {
           "text": "Yoco payment link on the sales page",
@@ -95,7 +95,6 @@
         }
       ],
       "waitingOnLucy": [
-        "Paste the new CV auto-reply into Meta and change the bio link (not done yet)",
         "Set up Yoco and create a payment link",
         "Ask 2 clients for permission to use their before-and-after"
       ],
@@ -115,7 +114,7 @@
       ],
       "folder": "Flow Corner/Get Hired with AI",
       "tag": "flowcorner",
-      "updated": "2026-10-25"
+      "updated": "2026-10-28"
     },
     {
       "id": "book-ppp",
@@ -537,15 +536,24 @@
           "done": true
         },
         {
+          "text": "Flow Corner Facebook Page created and linked to @flow_cornerr (unlocks Meta automations)",
+          "done": true
+        },
+        {
           "text": "Record follower counts monthly",
           "done": false
         }
       ],
       "waitingOnLucy": [],
-      "links": [],
+      "links": [
+        {
+          "label": "Flow Corner Facebook Page",
+          "url": "https://www.facebook.com/profile.php?id=61595818027945"
+        }
+      ],
       "folder": "Flow Corner/Instagram Posts",
       "tag": "instagram",
-      "updated": "2026-10-24"
+      "updated": "2026-10-28"
     },
     {
       "id": "church-admin-kit",
@@ -753,6 +761,14 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-10-28",
+      "text": "Created Flow Corner Facebook Page, linked it to Instagram, turned on Instagram messages in Inbox. Business Suite automations now work."
+    },
+    {
+      "date": "2026-10-28",
+      "text": "CV comment-to-DM automation live in Business Suite (keywords CV/cv/Cv), tested from another account. Bio has 2nd link \"Get Hired with AI - R149\" to /get-hired/. Saved reply \"cv\" as backup. Yoco on hold."
+    },
     {
       "date": "2026-10-27",
       "text": "Author Corner is live on flowcornerr.netlify.app: sales page at /author-corner/ and 5 free guides at /learning-hub/author-corner/."
