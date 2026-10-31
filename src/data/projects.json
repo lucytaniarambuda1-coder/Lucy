@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-11-01",
   "areas": [
     {
       "id": "flow",
@@ -127,8 +127,8 @@
       "status": "launching",
       "priority": 1,
       "summary": "Book 1, a 65-page Kindle devotional ($2.99). Published on Amazon, on sale 14 November 2026.",
-      "nextAction": "Post the book launch teasers from the posting schedule",
-      "due": "2026-11-14",
+      "nextAction": "Add the Amazon link to the Instagram bio before the 18:00 cover reveal on 3 Nov, using the phone app",
+      "due": "2026-11-03",
       "keyDates": [
         {
           "date": "2026-11-14",
@@ -165,11 +165,19 @@
           "done": false
         },
         {
-          "text": "Decide on a paperback / local print run",
+          "text": "Bio updated with book line; Middle Monday 9 Nov graphic and 10-13 Nov countdown stories made",
+          "done": true
+        },
+        {
+          "text": "Paperback on sale on Amazon, 14 November (Lucy confirmed 1 Nov; not showing on the Amazon page yet)",
           "done": false
         }
       ],
-      "waitingOnLucy": [],
+      "waitingOnLucy": [
+        "Add the Amazon link to the Instagram bio (phone app) by 3 Nov",
+        "Check the paperback shows on the Amazon page before the 5 Nov post",
+        "Schedule the 9 Nov Middle Monday post; post the countdown stories 10-13 Nov from the phone"
+      ],
       "links": [
         {
           "label": "Amazon",
@@ -178,7 +186,7 @@
       ],
       "folder": "Books/Passion Purpose Peace/KDP Ready",
       "tag": "book",
-      "updated": "2026-10-25"
+      "updated": "2026-11-01"
     },
     {
       "id": "masters",
@@ -791,6 +799,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-01",
+      "text": "Instagram bio now names the book; Middle Monday graphic and countdown stories made; paperback confirmed for 14 Nov"
+    },
     {
       "date": "2026-10-28",
       "text": "Posted 4 job stories (Sun International, Sasol, Limpopo, Dis-Chem) with link stickers via iPhone Mirroring and saved them to a new OPEN NOW highlight. iPhone had iCloud Photos sync paused (mobile data); resumed for a day."
