@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-04",
   "areas": [
     {
       "id": "flow",
@@ -127,8 +127,8 @@
       "status": "launching",
       "priority": 1,
       "summary": "Book 1, a 65-page Kindle devotional ($2.99). Published on Amazon, on sale 14 November 2026.",
-      "nextAction": "Add the Amazon link to the Instagram bio before the 18:00 cover reveal on 3 Nov, using the phone app",
-      "due": "2026-11-03",
+      "nextAction": "Add the Amazon link to the Instagram bio before 18:00 on 6 Nov",
+      "due": "2026-11-06",
       "keyDates": [
         {
           "date": "2026-11-14",
@@ -161,6 +161,10 @@
           "done": false
         },
         {
+          "text": "Launch posts rescheduled in Instagram: 5, 6, 8, 9, 10 Nov 18:00 and launch Reel 14 Nov 09:00",
+          "done": true
+        },
+        {
           "text": "Ask first readers for Amazon reviews",
           "done": false
         },
@@ -174,9 +178,11 @@
         }
       ],
       "waitingOnLucy": [
-        "Add the Amazon link to the Instagram bio (phone app) by 3 Nov",
-        "Check the paperback shows on the Amazon page before the 5 Nov post",
-        "Schedule the 9 Nov Middle Monday post; post the countdown stories 10-13 Nov from the phone"
+        "Add the Amazon link to the Instagram bio (phone app) before the 18:00 cover reveal on 6 Nov",
+        "Check the paperback shows on the Amazon page before the 8 Nov Reel",
+        "Delete any old copies still scheduled in Business Suite",
+        "Post countdown stories 10-13 Nov and launch stories 14 Nov from the phone",
+        "Schedule Midnight Chronicles June (7 Nov) and September (11 Nov) from the phone or Business Suite"
       ],
       "links": [
         {
@@ -186,7 +192,7 @@
       ],
       "folder": "Books/Passion Purpose Peace/KDP Ready",
       "tag": "book",
-      "updated": "2026-11-01"
+      "updated": "2026-11-04"
     },
     {
       "id": "masters",
@@ -799,6 +805,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-04",
+      "text": "Rescheduled the book launch posts in Instagram's scheduler after Lucy archived the originals: Reintroduce 5 Nov, cover reveal 6 Nov, outfit Reel 8 Nov, Middle Monday 9 Nov, Rock paper scissors 10 Nov (all 18:00), launch Reel 14 Nov 09:00"
+    },
     {
       "date": "2026-11-01",
       "text": "Instagram bio now names the book; Middle Monday graphic and countdown stories made; paperback confirmed for 14 Nov"
