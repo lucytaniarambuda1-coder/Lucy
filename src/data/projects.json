@@ -201,20 +201,12 @@
       "status": "active",
       "priority": 1,
       "summary": "Research master's. Proposal revised after E. Nel's October feedback; colloquium presentation prepared.",
-      "nextAction": "Prepare the colloquium presentation for 2 November (date not confirmed yet)",
-      "due": "2026-11-02",
+      "nextAction": "Get the exact colloquium date (last week of November) and keep the presentation ready",
+      "due": null,
       "keyDates": [
         {
-          "date": "2026-10-27",
-          "label": "UNISA CGS workshop: Women in the 4th Industrial Revolution (10:00)"
-        },
-        {
-          "date": "2026-10-27",
-          "label": "UNISA CGS workshop: Moving from Codes to Categories (18:00)"
-        },
-        {
-          "date": "2026-11-02",
-          "label": "Colloquium (to be confirmed)"
+          "date": "2026-11-23",
+          "label": "Colloquium: last week of November (exact date TBC)"
         }
       ],
       "milestones": [
@@ -256,13 +248,13 @@
         }
       ],
       "waitingOnLucy": [
-        "Confirm the colloquium date once UNISA sets it",
+        "Tell me the exact colloquium date once UNISA confirms it (last week of November)",
         "Tell me the dissertation submission deadline"
       ],
       "links": [],
       "folder": "UNISA Masters",
       "tag": "masters",
-      "updated": "2026-10-25"
+      "updated": "2026-11-05"
     },
     {
       "id": "young-adults",
@@ -848,6 +840,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-05",
+      "text": "Colloquium moved to the last week of November (23-27 Nov), exact date to be confirmed"
+    },
     {
       "date": "2026-11-05",
       "text": "Added Hoka Half (7 Nov), Growth Track facilitating (8, 15, 22 Nov), Urban Revival (14 Nov) and Pastor Tony's birthday (21 Nov); all also in the Mac Calendar"
