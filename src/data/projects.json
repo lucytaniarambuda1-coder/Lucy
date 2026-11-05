@@ -524,7 +524,7 @@
       ],
       "folder": "Flow Corner",
       "tag": "flowcorner",
-      "updated": "2026-10-26"
+      "updated": "2026-11-05"
     },
     {
       "id": "instagram",
@@ -840,6 +840,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-05",
+      "text": "Nolutho Mathuntuta CV revamp (test client): ATS-friendly draft built from her answers in Candidates/Nolutho-Mathuntuta; 8 last questions sent; LinkedIn revamp next."
+    },
     {
       "date": "2026-11-05",
       "text": "Colloquium moved to the last week of November (23-27 Nov), exact date to be confirmed"
