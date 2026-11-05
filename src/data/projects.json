@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "areas": [
     {
       "id": "flow",
@@ -642,7 +642,24 @@
       "summary": "Daily payment sync, weekly payments report, Growth Track, church website and 2027 Year Plan. Weekly check on Monday evenings.",
       "nextAction": "Monday check: clear the payment review queue and follow up on outstanding fees",
       "due": null,
-      "keyDates": [],
+      "keyDates": [
+        {
+          "date": "2026-11-08",
+          "label": "Growth Track: assisting with facilitating"
+        },
+        {
+          "date": "2026-11-14",
+          "label": "Urban Revival"
+        },
+        {
+          "date": "2026-11-15",
+          "label": "Growth Track: assisting with facilitating"
+        },
+        {
+          "date": "2026-11-22",
+          "label": "Growth Track: assisting with facilitating"
+        }
+      ],
       "milestones": [
         {
           "text": "Daily payment sync automated",
@@ -666,7 +683,33 @@
       ],
       "folder": "CFCI Soweto",
       "tag": "church",
-      "updated": "2026-10-25"
+      "updated": "2026-11-05"
+    },
+    {
+      "id": "personal-dates",
+      "name": "Events & birthdays",
+      "area": "life",
+      "status": "ongoing",
+      "priority": 3,
+      "summary": "Personal events and birthdays to keep in view (also in the Mac Calendar).",
+      "nextAction": "",
+      "due": null,
+      "keyDates": [
+        {
+          "date": "2026-11-07",
+          "label": "Hoka Half Marathon"
+        },
+        {
+          "date": "2026-11-21",
+          "label": "Pastor Tony's birthday"
+        }
+      ],
+      "milestones": [],
+      "waitingOnLucy": [],
+      "links": [],
+      "folder": "",
+      "tag": "",
+      "updated": "2026-11-05"
     },
     {
       "id": "book-mmitm",
@@ -805,6 +848,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-05",
+      "text": "Added Hoka Half (7 Nov), Growth Track facilitating (8, 15, 22 Nov), Urban Revival (14 Nov) and Pastor Tony's birthday (21 Nov); all also in the Mac Calendar"
+    },
     {
       "date": "2026-11-04",
       "text": "Rescheduled the book launch posts in Instagram's scheduler after Lucy archived the originals: Reintroduce 5 Nov, cover reveal 6 Nov, outfit Reel 8 Nov, Middle Monday 9 Nov, Rock paper scissors 10 Nov (all 18:00), launch Reel 14 Nov 09:00"
