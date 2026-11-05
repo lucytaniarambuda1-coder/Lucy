@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "areas": [
     {
       "id": "flow",
@@ -263,7 +263,7 @@
       "status": "active",
       "priority": 1,
       "summary": "Pastor-led ministry for ages 25 to 40 at CFC Soweto (Exodus 33:14-15). Approved by the pastors on 19 October.",
-      "nextAction": "Meet with the pastors about the launch plan",
+      "nextAction": "Restart the old young adults WhatsApp group and invite everyone to the launch on Sat 28 Nov",
       "due": "2026-11-28",
       "keyDates": [
         {
@@ -273,6 +273,18 @@
         {
           "date": "2026-12-04",
           "label": "First Friday prayer night"
+        },
+        {
+          "date": "2027-01-09",
+          "label": "Core team planning day"
+        },
+        {
+          "date": "2027-06-19",
+          "label": "Multi-church celebration"
+        },
+        {
+          "date": "2027-11-27",
+          "label": "Year-end celebration"
         }
       ],
       "milestones": [
@@ -289,8 +301,12 @@
           "done": true
         },
         {
-          "text": "Core team confirmed (Lucy, Mukhethwa, Fhumu, Latty + more)",
-          "done": false
+          "text": "Run plan, team roles and suggested 2027 dates added to joiners deck",
+          "done": true
+        },
+        {
+          "text": "Core team identified (Mukhethwa, Fhumu, Latty, Khuthi, Thato, Amanda, Tshupsie, Ps Ndibz + more)",
+          "done": true
         },
         {
           "text": "Launch event planned and announced",
@@ -303,10 +319,24 @@
         {
           "text": "Launch on Saturday 28 November",
           "done": false
+        },
+        {
+          "text": "Restart the old young adults WhatsApp group",
+          "done": false
+        },
+        {
+          "text": "Assign team roles at the planning day (Sat 9 Jan 2027)",
+          "done": false
+        },
+        {
+          "text": "2027 dates confirmed and added to the church Year Plan",
+          "done": false
         }
       ],
       "waitingOnLucy": [
-        "Tell me the outcome of the meeting with the pastors"
+        "Tell me the outcome of the meeting with the pastors",
+        "Confirm Ps Ndibz's role (pastoral support or core team)",
+        "Confirm the suggested 2027 dates with Pastor Grace"
       ],
       "links": [
         {
@@ -324,7 +354,7 @@
       ],
       "folder": "CFCI Soweto/Young Adults Ministry",
       "tag": "church",
-      "updated": "2026-10-25"
+      "updated": "2026-11-06"
     },
     {
       "id": "cafe",
@@ -840,6 +870,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-06",
+      "text": "Young Adults joiners deck: added team (Fhumu, Latty, Khuthi, Thato, Amanda, Tshupsie, Ps Ndibz), six team roles, a 'keeping it alive' run plan and suggested 2027 dates (one main event a month)."
+    },
     {
       "date": "2026-11-05",
       "text": "Nolutho job search: 4 open roles verified (Ariston B-BBEE Analyst, SASSO Senior Verification Analyst, Skills Development Senior Officer Centurion, EY BBBEE Manager); shortlist saved in her folder."
