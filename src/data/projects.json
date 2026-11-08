@@ -304,7 +304,7 @@
           "done": true
         },
         {
-          "text": "Run plan, team roles and suggested 2027 dates added to joiners deck",
+          "text": "Update deck for the pastors (team, run plan, 2027 dates); joiners deck kept invitation-only",
           "done": true
         },
         {
@@ -349,6 +349,10 @@
         {
           "label": "Joiners deck",
           "url": "https://claude.ai/artifact/TzkGKLnraYrkURj8NrYevX"
+        },
+        {
+          "label": "Pastors update deck (Nov)",
+          "url": "https://claude.ai/artifact/DHVchS78vTXnKTp4k9SCPg"
         },
         {
           "label": "SCFC Project Hub",
@@ -880,6 +884,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-08",
+      "text": "Young Adults: split into two decks. Joiners deck is invitation-only (removed internal roles/run-plan slides and past 1 Nov dates); new 9-slide update deck for Pastor Grace and the pastors with progress, team roles, run plan, next weeks, suggested 2027 dates and asks."
+    },
     {
       "date": "2026-11-08",
       "text": "Instagram: scheduled the last 3 November posts (27 Nov Black Friday, 29 Nov poll, 30 Nov interview questions) for Instagram + Facebook. All of November is now scheduled."
