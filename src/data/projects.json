@@ -127,8 +127,8 @@
       "status": "launching",
       "priority": 1,
       "summary": "Book 1, a 65-page Kindle devotional ($2.99). Published on Amazon, on sale 14 November 2026.",
-      "nextAction": "Add the Amazon link to the Instagram bio before 18:00 on 6 Nov",
-      "due": "2026-11-06",
+      "nextAction": "Countdown stories 10-13 Nov, then launch day posts and church announcement on Sat 14 Nov",
+      "due": "2026-11-14",
       "keyDates": [
         {
           "date": "2026-11-14",
@@ -173,16 +173,13 @@
           "done": true
         },
         {
-          "text": "Paperback on sale on Amazon, 14 November (Lucy confirmed 1 Nov; not showing on the Amazon page yet)",
+          "text": "Paperback on sale on Amazon, 14 November (only shows on the Amazon page from the 14th)",
           "done": false
         }
       ],
       "waitingOnLucy": [
-        "Add the Amazon link to the Instagram bio (phone app) before the 18:00 cover reveal on 6 Nov",
-        "Check the paperback shows on the Amazon page before the 8 Nov Reel",
-        "Delete any old copies still scheduled in Business Suite",
-        "Post countdown stories 10-13 Nov and launch stories 14 Nov from the phone",
-        "Schedule Midnight Chronicles June (7 Nov) and September (11 Nov) from the phone or Business Suite"
+        "Delete the last old copies still scheduled in Business Suite (some already deleted)",
+        "Post countdown stories 10-13 Nov and launch stories 14 Nov from the phone"
       ],
       "links": [
         {
@@ -192,7 +189,10 @@
       ],
       "folder": "Books/Passion Purpose Peace/KDP Ready",
       "tag": "book",
-      "updated": "2026-11-04"
+      "updated": "2026-11-08",
+      "log": [
+        "2026-11-08: Sunday reset: Amazon link in bio done; paperback page only shows from 14 Nov; some old Business Suite copies deleted; Claude scheduling Midnight Chronicles June + September (IG + Facebook)"
+      ]
     },
     {
       "id": "masters",
@@ -201,12 +201,12 @@
       "status": "active",
       "priority": 1,
       "summary": "Research master's. Proposal revised after E. Nel's October feedback; colloquium presentation prepared.",
-      "nextAction": "Get the exact colloquium date (last week of November) and keep the presentation ready",
-      "due": null,
+      "nextAction": "Finish the proposal slides and send them to the supervisor to check before the 17 Nov presentation",
+      "due": "2026-11-17",
       "keyDates": [
         {
-          "date": "2026-11-23",
-          "label": "Colloquium: last week of November (exact date TBC)"
+          "date": "2026-11-17",
+          "label": "UNISA proposal presentations, 08:30-14:10 (30-min slot TBC)"
         }
       ],
       "milestones": [
@@ -248,13 +248,16 @@
         }
       ],
       "waitingOnLucy": [
-        "Tell me the exact colloquium date once UNISA confirms it (last week of November)",
+        "Tell me your 30-minute time slot on 17 Nov once UNISA sends it",
         "Tell me the dissertation submission deadline"
       ],
       "links": [],
       "folder": "UNISA Masters",
       "tag": "masters",
-      "updated": "2026-11-05"
+      "updated": "2026-11-08",
+      "log": [
+        "2026-11-08: Colloquium confirmed: proposal presentations 17 Nov 2026, 08:30-14:10, 30-min slot to be advised. Proposal status \"Queued\". Supervisor offered to check slides."
+      ]
     },
     {
       "id": "young-adults",
@@ -334,9 +337,9 @@
         }
       ],
       "waitingOnLucy": [
-        "Tell me the outcome of the meeting with the pastors",
         "Confirm Ps Ndibz's role (pastoral support or core team)",
-        "Confirm the suggested 2027 dates with Pastor Grace"
+        "Confirm the suggested 2027 dates with Pastor Grace",
+        "Send the pastors the presentation of the plan (no meeting happened)"
       ],
       "links": [
         {
@@ -354,7 +357,10 @@
       ],
       "folder": "CFCI Soweto/Young Adults Ministry",
       "tag": "church",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08",
+      "log": [
+        "2026-11-08: No meeting with the pastors yet; Lucy may send them the plan presentation instead"
+      ]
     },
     {
       "id": "cafe",
