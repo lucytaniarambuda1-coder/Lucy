@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-08",
   "areas": [
     {
       "id": "flow",
@@ -563,8 +563,8 @@
       "status": "ongoing",
       "priority": 3,
       "summary": "@flow_cornerr (business) and lucytaniarr (personal brand, books, faith). Weekly batch on Sunday afternoons.",
-      "nextAction": "11 Nov: post the FNB link story (Batch 5 stories-v2). From 31 Oct: schedule 27, 29, 30 Nov posts",
-      "due": "2026-10-31",
+      "nextAction": "Film and post the November Reels (Tue/Thu/Sat from 17 Nov); plan December posts",
+      "due": null,
       "keyDates": [],
       "milestones": [
         {
@@ -619,7 +619,7 @@
       ],
       "folder": "Flow Corner/Instagram Posts",
       "tag": "instagram",
-      "updated": "2026-10-28"
+      "updated": "2026-11-08"
     },
     {
       "id": "church-admin-kit",
@@ -870,6 +870,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-08",
+      "text": "Instagram: scheduled the last 3 November posts (27 Nov Black Friday, 29 Nov poll, 30 Nov interview questions) for Instagram + Facebook. All of November is now scheduled."
+    },
     {
       "date": "2026-11-06",
       "text": "Young Adults joiners deck: added team (Fhumu, Latty, Khuthi, Thato, Amanda, Tshupsie, Ps Ndibz), six team roles, a 'keeping it alive' run plan and suggested 2027 dates (one main event a month)."
