@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-13",
   "areas": [
     {
       "id": "flow",
@@ -175,11 +175,20 @@
         {
           "text": "Paperback on sale on Amazon, 14 November (only shows on the Amazon page from the 14th)",
           "done": false
+        },
+        {
+          "text": "Local print quotes received (Print on Demand, Remata, Media Mafia, Bookprinters)",
+          "done": true
+        },
+        {
+          "text": "Choose local printer and order one proof copy",
+          "done": false
         }
       ],
       "waitingOnLucy": [
         "Delete the last old copies still scheduled in Business Suite (some already deleted)",
-        "Post countdown stories 10-13 Nov and launch stories 14 Nov from the phone"
+        "Post countdown stories 10-13 Nov and launch stories 14 Nov from the phone",
+        "Pick a local printer for SA copies (Remata quote expires 16 Nov; Print on Demand valid to 11 Dec)"
       ],
       "links": [
         {
@@ -189,9 +198,10 @@
       ],
       "folder": "Books/Passion Purpose Peace/KDP Ready",
       "tag": "book",
-      "updated": "2026-11-08",
+      "updated": "2026-11-13",
       "log": [
-        "2026-11-08: Sunday reset: Amazon link in bio done; paperback page only shows from 14 Nov; some old Business Suite copies deleted; Claude scheduling Midnight Chronicles June + September (IG + Facebook)"
+        "2026-11-08: Sunday reset: Amazon link in bio done; paperback page only shows from 14 Nov; some old Business Suite copies deleted; Claude scheduling Midnight Chronicles June + September (IG + Facebook)",
+        "2026-11-13: Local print quotes compared (comparison in Books/Passion Purpose Peace/Printer quote comparison.txt). Cheapest softcover: Print on Demand; local Midrand option: Remata"
       ]
     },
     {
