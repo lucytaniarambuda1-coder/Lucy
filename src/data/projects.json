@@ -520,7 +520,7 @@
       "status": "ongoing",
       "priority": 2,
       "summary": "flowcornerr.netlify.app: CV revamps, LinkedIn, career guidance, Learning Hub, Start a Business pages. Client CVs in Client Documents.",
-      "nextAction": "Add real client testimonials to the site",
+      "nextAction": "Buy the custom domain, then switch the site to it (one-line change)",
       "due": null,
       "keyDates": [],
       "milestones": [
@@ -545,8 +545,12 @@
           "done": true
         },
         {
-          "text": "Price list on the site",
-          "done": false
+          "text": "Pre-domain clean-up: free vs paid made clear, Get Hired kit page restored (PR #8 live 15 Nov)",
+          "done": true
+        },
+        {
+          "text": "Price list on the site (CV R100, LinkedIn R150, Roadmap R500; founding half price)",
+          "done": true
         },
         {
           "text": "Flow Corner email address",
@@ -562,7 +566,8 @@
         }
       ],
       "waitingOnLucy": [
-        "Real client testimonials to add to the site"
+        "Real client testimonials to add to the site",
+        "Is the kit's 'R149 for the first 50 buyers' offer still running?"
       ],
       "links": [
         {
@@ -576,6 +581,10 @@
         {
           "label": "Brand Book",
           "url": "https://claude.ai/artifact/6dS2VPp1ECTjRGA3pyHcGe"
+        },
+        {
+          "label": "Get Hired with AI kit",
+          "url": "https://flowcornerr.netlify.app/get-hired/"
         }
       ],
       "folder": "Flow Corner",
@@ -900,6 +909,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-15",
+      "text": "Flow Corner site: new prices (CV R100, LinkedIn R150, founding half), home page shows what's free vs paid, kit and templates marked as paid products, /get-hired/ sales page restored (it had been a 404), About/Work updated (AI Projects Manager, Masters). PR #8 merged and uploaded."
+    },
     {
       "date": "2026-11-15",
       "text": "Flow Corner site: FC logo in the header and mobile bar, new favicon, space above the home hero, em dashes 200 to 0, generic copy rewritten, round gold-ringed photo on About. PR #6 merged and uploaded to Netlify; PR #7 merged to keep the generator in step."
