@@ -520,7 +520,7 @@
       "status": "ongoing",
       "priority": 2,
       "summary": "flowcornerr.netlify.app: CV revamps, LinkedIn, career guidance, Learning Hub, Start a Business pages. Client CVs in Client Documents.",
-      "nextAction": "Merge PR #7 (keeps the site generator in step with the live pages)",
+      "nextAction": "Add real client testimonials to the site",
       "due": null,
       "keyDates": [],
       "milestones": [
@@ -902,7 +902,7 @@
   "log": [
     {
       "date": "2026-11-15",
-      "text": "Flow Corner site: FC logo in the header and mobile bar, new favicon, space above the home hero, em dashes 200 to 0, generic copy rewritten, round gold-ringed photo on About. PR #6 merged and uploaded to Netlify; PR #7 open to sync the generator."
+      "text": "Flow Corner site: FC logo in the header and mobile bar, new favicon, space above the home hero, em dashes 200 to 0, generic copy rewritten, round gold-ringed photo on About. PR #6 merged and uploaded to Netlify; PR #7 merged to keep the generator in step."
     },
     {
       "date": "2026-11-08",
