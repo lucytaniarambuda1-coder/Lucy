@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-15",
   "areas": [
     {
       "id": "flow",
@@ -520,7 +520,7 @@
       "status": "ongoing",
       "priority": 2,
       "summary": "flowcornerr.netlify.app: CV revamps, LinkedIn, career guidance, Learning Hub, Start a Business pages. Client CVs in Client Documents.",
-      "nextAction": "Fix the nav logo (still says \"Lucy M.\")",
+      "nextAction": "Merge PR #7 (keeps the site generator in step with the live pages)",
       "due": null,
       "keyDates": [],
       "milestones": [
@@ -541,6 +541,10 @@
           "done": true
         },
         {
+          "text": "Logo in header, top spacing, plainer copy (0 em dashes), round About photo (PR #6 live 15 Nov)",
+          "done": true
+        },
+        {
           "text": "Price list on the site",
           "done": false
         },
@@ -557,7 +561,9 @@
           "done": false
         }
       ],
-      "waitingOnLucy": [],
+      "waitingOnLucy": [
+        "Real client testimonials to add to the site"
+      ],
       "links": [
         {
           "label": "Website",
@@ -574,7 +580,7 @@
       ],
       "folder": "Flow Corner",
       "tag": "flowcorner",
-      "updated": "2026-11-05"
+      "updated": "2026-11-15"
     },
     {
       "id": "instagram",
@@ -894,6 +900,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-15",
+      "text": "Flow Corner site: FC logo in the header and mobile bar, new favicon, space above the home hero, em dashes 200 to 0, generic copy rewritten, round gold-ringed photo on About. PR #6 merged and uploaded to Netlify; PR #7 open to sync the generator."
+    },
     {
       "date": "2026-11-08",
       "text": "Young Adults: split into two decks. Joiners deck is invitation-only (removed internal roles/run-plan slides and past 1 Nov dates); new 9-slide update deck for Pastor Grace and the pastors with progress, team roles, run plan, next weeks, suggested 2027 dates and asks."
