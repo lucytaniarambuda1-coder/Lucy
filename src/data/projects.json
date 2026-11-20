@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-20",
   "areas": [
     {
       "id": "flow",
@@ -906,9 +906,74 @@
       "folder": "Lucy's Project/lucys-world",
       "tag": "",
       "updated": "2026-10-25"
+    },
+    {
+      "id": "opening-up-site",
+      "name": "Opening Up podcast website",
+      "area": "life",
+      "status": "active",
+      "priority": 3,
+      "summary": "Favour for Shaquan Khumalo: new website for Opening Up : The Podcast (episodes library, YouTube player, guest profiles, contact + newsletter forms, /admin page for him to add episodes). Built on Lucy's accounts, then handed over to his GitHub + Netlify.",
+      "nextAction": "Send Shaquan the preview link and the list of what we still need (logo, WhatsApp number, socials, photos, name checks)",
+      "due": null,
+      "keyDates": [],
+      "milestones": [
+        {
+          "text": "Site built: home, episodes library + 6 episode pages, people, about, contact",
+          "done": true
+        },
+        {
+          "text": "Preview live on Lucy's Netlify, forms tested",
+          "done": true
+        },
+        {
+          "text": "Shaquan's feedback on the preview",
+          "done": false
+        },
+        {
+          "text": "Real logo, photos, WhatsApp and social links added",
+          "done": false
+        },
+        {
+          "text": "Repo transferred to Shaquan's GitHub and imported on his Netlify",
+          "done": false
+        },
+        {
+          "text": "Admin page (CMS) switched on and tested on his site",
+          "done": false
+        },
+        {
+          "text": "Lucy's preview project deleted",
+          "done": false
+        }
+      ],
+      "waitingOnLucy": [
+        "Share the preview with Shaquan and collect: logo, WhatsApp number, social links, photos, and the name/line-up checks in HANDOVER.md"
+      ],
+      "links": [
+        {
+          "label": "Preview",
+          "url": "https://openinguppodcast.netlify.app"
+        },
+        {
+          "label": "Code (GitHub, private)",
+          "url": "https://github.com/lucytaniarambuda1-coder/opening-up-podcast"
+        },
+        {
+          "label": "Handover guide",
+          "url": "https://github.com/lucytaniarambuda1-coder/opening-up-podcast/blob/main/HANDOVER.md"
+        }
+      ],
+      "folder": null,
+      "tag": "favour",
+      "updated": "2026-11-20"
     }
   ],
   "log": [
+    {
+      "date": "2026-11-20",
+      "text": "Opening Up podcast website (favour for Shaquan): built and previewed at openinguppodcast.netlify.app; waiting on his feedback and assets before handover to his accounts."
+    },
     {
       "date": "2026-11-15",
       "text": "Nolutho: Kontak Verifications Analyst (JB6343) application submitted. 2 applications in (SASSO, Kontak); Sage next, with her own Workday account."
