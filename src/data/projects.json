@@ -1001,8 +1001,7 @@
         }
       ],
       "waitingOnLucy": [
-        "Check qualifications wording on the About page (degree name, PGCE)",
-        "Is the Instagram handle @lucytaniar or @lucytaniarr?",
+        "Merge the 'Correct my qualifications' pull request on GitHub",
         "Look at the 1 newsletter sign-up in Netlify Forms (invite them to Substack) and delete the TEST contact message"
       ],
       "links": [
