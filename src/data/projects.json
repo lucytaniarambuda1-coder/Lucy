@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "areas": [
     {
       "id": "flow",
@@ -975,7 +975,7 @@
       "status": "active",
       "priority": 2,
       "summary": "My own author site: bio and story, qualifications, the book with buy links, articles, Flow Corner link, newsletter and contact forms. Uses my Lucy Mukhethwa design system (white, serif, pink and blue accents).",
-      "nextAction": "Send Claude your Substack link and check the qualifications wording",
+      "nextAction": "Merge the Monday 'New Substack posts' pull request when one arrives",
       "due": null,
       "keyDates": [],
       "milestones": [
@@ -989,7 +989,7 @@
         },
         {
           "text": "Substack link added",
-          "done": false
+          "done": true
         },
         {
           "text": "GitHub repo + Netlify site live",
@@ -1001,10 +1001,9 @@
         }
       ],
       "waitingOnLucy": [
-        "Substack link",
-        "Check qualifications wording (degree name, PGCE)",
+        "Check qualifications wording on the About page (degree name, PGCE)",
         "Is the Instagram handle @lucytaniar or @lucytaniarr?",
-        "Click the Netlify confirmation email in iCloud to switch on form alerts"
+        "Look at the 1 newsletter sign-up in Netlify Forms (invite them to Substack) and delete the TEST contact message"
       ],
       "links": [
         {
@@ -1022,10 +1021,14 @@
       ],
       "folder": "Lucy's Project/lucy-mukhethwa-website",
       "tag": null,
-      "updated": "2026-11-21"
+      "updated": "2026-11-22"
     }
   ],
   "log": [
+    {
+      "date": "2026-11-22",
+      "text": "Personal website health check: all pages, links, HTTPS, forms and alerts working; Substack posts added, weekly Claude check set up."
+    },
     {
       "date": "2026-11-21",
       "text": "Personal website moved to lucymukhethwa.flowcorner.co.za."
