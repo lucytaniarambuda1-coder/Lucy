@@ -975,7 +975,7 @@
       "status": "active",
       "priority": 2,
       "summary": "My own author site: bio and story, qualifications, the book with buy links, articles, Flow Corner link, newsletter and contact forms. Uses my Lucy Mukhethwa design system (white, serif, pink and blue accents).",
-      "nextAction": "Review the preview, then send Claude your Substack link and choose a domain",
+      "nextAction": "Look through lucymukhethwa.netlify.app, then send Claude your Substack link and choose a domain",
       "due": null,
       "keyDates": [],
       "milestones": [
@@ -993,7 +993,7 @@
         },
         {
           "text": "GitHub repo + Netlify site live",
-          "done": false
+          "done": true
         },
         {
           "text": "Own domain connected",
@@ -1004,15 +1004,33 @@
         "Substack link",
         "Check qualifications wording (degree name, PGCE)",
         "Domain name choice (e.g. lucymukhethwa.co.za)",
-        "Is the Instagram handle @lucytaniar or @lucytaniarr?"
+        "Is the Instagram handle @lucytaniar or @lucytaniarr?",
+        "Form email alerts: want an email when someone uses the contact form? (set up in Netlify)"
       ],
-      "links": [],
+      "links": [
+        {
+          "label": "Live site",
+          "url": "https://lucymukhethwa.netlify.app"
+        },
+        {
+          "label": "Code (GitHub)",
+          "url": "https://github.com/lucytaniarambuda1-coder/lucy-mukhethwa-website"
+        },
+        {
+          "label": "Netlify",
+          "url": "https://app.netlify.com/projects/lucymukhethwa/overview"
+        }
+      ],
       "folder": "Lucy's Project/lucy-mukhethwa-website",
       "tag": null,
       "updated": "2026-11-21"
     }
   ],
   "log": [
+    {
+      "date": "2026-11-21",
+      "text": "My personal website is live at lucymukhethwa.netlify.app."
+    },
     {
       "date": "2026-11-21",
       "text": "Built my personal author website (preview), in the Lucy Mukhethwa design system."
