@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "areas": [
     {
       "id": "flow",
@@ -967,9 +967,56 @@
       "folder": null,
       "tag": "favour",
       "updated": "2026-11-20"
+    },
+    {
+      "id": "lucy-site",
+      "name": "Lucy Mukhethwa personal website",
+      "area": "books",
+      "status": "active",
+      "priority": 2,
+      "summary": "My own author site: bio and story, qualifications, the book with buy links, articles, Flow Corner link, newsletter and contact forms. Uses my Lucy Mukhethwa design system (white, serif, pink and blue accents).",
+      "nextAction": "Review the preview, then send Claude your Substack link and choose a domain",
+      "due": null,
+      "keyDates": [],
+      "milestones": [
+        {
+          "text": "Site built: home, about, book, 5 articles, contact",
+          "done": true
+        },
+        {
+          "text": "Lucy reviews the wording and facts",
+          "done": false
+        },
+        {
+          "text": "Substack link added",
+          "done": false
+        },
+        {
+          "text": "GitHub repo + Netlify site live",
+          "done": false
+        },
+        {
+          "text": "Own domain connected",
+          "done": false
+        }
+      ],
+      "waitingOnLucy": [
+        "Substack link",
+        "Check qualifications wording (degree name, PGCE)",
+        "Domain name choice (e.g. lucymukhethwa.co.za)",
+        "Is the Instagram handle @lucytaniar or @lucytaniarr?"
+      ],
+      "links": [],
+      "folder": "Lucy's Project/lucy-mukhethwa-website",
+      "tag": null,
+      "updated": "2026-11-21"
     }
   ],
   "log": [
+    {
+      "date": "2026-11-21",
+      "text": "Built my personal author website (preview), in the Lucy Mukhethwa design system."
+    },
     {
       "date": "2026-11-20",
       "text": "Opening Up podcast website (favour for Shaquan): built and previewed at openinguppodcast.netlify.app; waiting on his feedback and assets before handover to his accounts."
