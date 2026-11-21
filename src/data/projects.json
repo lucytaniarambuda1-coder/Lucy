@@ -985,7 +985,7 @@
         },
         {
           "text": "Lucy reviews the wording and facts",
-          "done": false
+          "done": true
         },
         {
           "text": "Substack link added",
@@ -1001,7 +1001,6 @@
         }
       ],
       "waitingOnLucy": [
-        "Merge the 'Correct my qualifications' pull request on GitHub",
         "Look at the 1 newsletter sign-up in Netlify Forms (invite them to Substack) and delete the TEST contact message"
       ],
       "links": [
