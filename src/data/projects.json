@@ -378,6 +378,166 @@
       ]
     },
     {
+      "id": "women-who-build",
+      "name": "The Women Who Build: 21-Day Journey",
+      "area": "life",
+      "status": "active",
+      "priority": 1,
+      "summary": "Kabelo Mohale's 21-day course. Fell off around Day 10. Plan: one day a day from Tue 24 Nov, finishing Day 21 on Sat 5 Dec.",
+      "nextAction": "Do Day 10 (restart here)",
+      "due": "2026-11-24",
+      "keyDates": [
+        {
+          "date": "2026-11-24",
+          "label": "Women Who Build: Day 10"
+        },
+        {
+          "date": "2026-11-25",
+          "label": "Women Who Build: Day 11"
+        },
+        {
+          "date": "2026-11-26",
+          "label": "Women Who Build: Day 12"
+        },
+        {
+          "date": "2026-11-27",
+          "label": "Women Who Build: Day 13"
+        },
+        {
+          "date": "2026-11-28",
+          "label": "Women Who Build: Day 14"
+        },
+        {
+          "date": "2026-11-29",
+          "label": "Women Who Build: Day 15"
+        },
+        {
+          "date": "2026-11-30",
+          "label": "Women Who Build: Day 16"
+        },
+        {
+          "date": "2026-12-01",
+          "label": "Women Who Build: Day 17"
+        },
+        {
+          "date": "2026-12-02",
+          "label": "Women Who Build: Day 18"
+        },
+        {
+          "date": "2026-12-03",
+          "label": "Women Who Build: Day 19"
+        },
+        {
+          "date": "2026-12-04",
+          "label": "Women Who Build: Day 20"
+        },
+        {
+          "date": "2026-12-05",
+          "label": "Women Who Build: Day 21"
+        }
+      ],
+      "milestones": [
+        {
+          "text": "Day 1",
+          "done": true
+        },
+        {
+          "text": "Day 2",
+          "done": true
+        },
+        {
+          "text": "Day 3",
+          "done": true
+        },
+        {
+          "text": "Day 4",
+          "done": true
+        },
+        {
+          "text": "Day 5",
+          "done": true
+        },
+        {
+          "text": "Day 6",
+          "done": true
+        },
+        {
+          "text": "Day 7",
+          "done": true
+        },
+        {
+          "text": "Day 8",
+          "done": true
+        },
+        {
+          "text": "Day 9",
+          "done": true
+        },
+        {
+          "text": "Day 10",
+          "done": false
+        },
+        {
+          "text": "Day 11",
+          "done": false
+        },
+        {
+          "text": "Day 12",
+          "done": false
+        },
+        {
+          "text": "Day 13",
+          "done": false
+        },
+        {
+          "text": "Day 14",
+          "done": false
+        },
+        {
+          "text": "Day 15",
+          "done": false
+        },
+        {
+          "text": "Day 16",
+          "done": false
+        },
+        {
+          "text": "Day 17",
+          "done": false
+        },
+        {
+          "text": "Day 18",
+          "done": false
+        },
+        {
+          "text": "Day 19",
+          "done": false
+        },
+        {
+          "text": "Day 20",
+          "done": false
+        },
+        {
+          "text": "Day 21",
+          "done": false
+        }
+      ],
+      "waitingOnLucy": [
+        "Confirm which day you last finished (Days 1 to 9 are ticked for now)",
+        "List which days have no PDF in Downloads, so we can get those lessons from the course site",
+        "Move the course PDFs from Downloads into Personal/The Women Who Build"
+      ],
+      "links": [
+        {
+          "label": "Course page",
+          "url": "https://thejourney.kabelomohale.com/products/the-women-who-build-the-21-day-journey"
+        }
+      ],
+      "folder": "Personal/The Women Who Build",
+      "tag": "personal",
+      "updated": "2026-11-23"
+    },
+    {
       "id": "cafe",
       "name": "Flow Corner Café, Leratong City Mall",
       "area": "flow",
@@ -1024,6 +1184,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-23",
+      "text": "Added The Women Who Build 21-Day Journey: restart at Day 10 on 24 Nov, one day a day to Day 21 on 5 Dec."
+    },
     {
       "date": "2026-11-22",
       "text": "Personal website health check: all pages, links, HTTPS, forms and alerts working; Substack posts added, weekly Claude check set up."
