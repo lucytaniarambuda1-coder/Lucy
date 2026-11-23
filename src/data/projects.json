@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "areas": [
     {
       "id": "flow",
@@ -276,16 +276,16 @@
       "status": "active",
       "priority": 1,
       "summary": "Pastor-led ministry for ages 25 to 40 at CFC Soweto (Exodus 33:14-15). Approved by the pastors on 19 October.",
-      "nextAction": "Restart the old young adults WhatsApp group and invite everyone to the launch on Sat 28 Nov",
-      "due": "2026-11-28",
+      "nextAction": "Message the small group for ideas, then invite everyone to the first meetup on Sun 6 Dec",
+      "due": "2026-12-06",
       "keyDates": [
         {
-          "date": "2026-11-28",
-          "label": "Launch (Saturday)"
+          "date": "2026-12-06",
+          "label": "First meetup (Sunday)"
         },
         {
-          "date": "2026-12-04",
-          "label": "First Friday prayer night"
+          "date": "2026-12-11",
+          "label": "First prayer night"
         },
         {
           "date": "2027-01-09",
@@ -322,7 +322,7 @@
           "done": true
         },
         {
-          "text": "Launch event planned and announced",
+          "text": "First meetup planned and announced",
           "done": false
         },
         {
@@ -330,7 +330,7 @@
           "done": false
         },
         {
-          "text": "Launch on Saturday 28 November",
+          "text": "First meetup on Sunday 6 December",
           "done": false
         },
         {
@@ -371,9 +371,10 @@
       ],
       "folder": "CFCI Soweto/Young Adults Ministry",
       "tag": "church",
-      "updated": "2026-11-08",
+      "updated": "2026-11-23",
       "log": [
-        "2026-11-08: No meeting with the pastors yet; Lucy may send them the plan presentation instead"
+        "2026-11-08: No meeting with the pastors yet; Lucy may send them the plan presentation instead",
+        "2026-11-23: First meetup moved from Sat 28 Nov to Sun 6 Dec; prayer night 11 Dec, Bible study week of 14 Dec, hike 19 Dec. Both decks updated."
       ]
     },
     {
