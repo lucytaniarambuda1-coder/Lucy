@@ -9,6 +9,7 @@ import FocusView from './components/FocusView'
 import LoveLanguageView from './components/LoveLanguageView'
 import AttachmentView from './components/AttachmentView'
 import ProjectsView from './components/ProjectsView'
+import JourneyView from './components/JourneyView'
 import SyncBadge from './components/SyncBadge'
 import TaskModal from './components/TaskModal'
 import { useLocalStorage } from './hooks/useLocalStorage'
@@ -119,6 +120,7 @@ const LIFE_LIST_TASKS = [...HOME_TASKS, ...WORK_TASKS, ...PERSONAL_TASKS, ...SCH
 
 const TABS = [
   { id: 'today', label: 'Today' },
+  { id: 'journey', label: '21-Day Journey' },
   { id: 'tasks', label: 'Master List' },
   { id: 'weekly', label: 'Weekly' },
   { id: 'braindump', label: 'Brain Dump' },
@@ -207,6 +209,9 @@ export default function App() {
       <main style={s.main}>
         {activeTab === 'today' && (
           <TodayView tasks={tasks} onToggle={toggleTask} top3={top3} setTop3={setTop3} />
+        )}
+        {activeTab === 'journey' && (
+          <JourneyView />
         )}
         {activeTab === 'tasks' && (
           <TaskList tasks={tasks} onToggle={toggleTask} onEdit={openEdit} onDelete={deleteTask} onAdd={openAdd} onUpdateDate={updateTaskDate} />
