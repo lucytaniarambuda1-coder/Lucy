@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "areas": [
     {
       "id": "flow",
@@ -276,7 +276,7 @@
       "status": "active",
       "priority": 1,
       "summary": "Pastor-led ministry for ages 25 to 40 at CFC Soweto (Exodus 33:14-15). Approved by the pastors on 19 October.",
-      "nextAction": "Message the small group for ideas, then invite everyone to the first meetup on Sun 6 Dec",
+      "nextAction": "Invite everyone to the first meetup on Sun 6 Dec (ideas from the group chat are now in the joiners' deck)",
       "due": "2026-12-06",
       "keyDates": [
         {
@@ -319,6 +319,10 @@
         },
         {
           "text": "Core team identified (Mukhethwa, Fhumu, Latty, Khuthi, Thato, Amanda, Tshupsie, Ps Ndibz + more)",
+          "done": true
+        },
+        {
+          "text": "Group chat started and young adults' ideas gathered",
           "done": true
         },
         {
@@ -371,10 +375,11 @@
       ],
       "folder": "CFCI Soweto/Young Adults Ministry",
       "tag": "church",
-      "updated": "2026-11-23",
+      "updated": "2026-11-24",
       "log": [
         "2026-11-08: No meeting with the pastors yet; Lucy may send them the plan presentation instead",
-        "2026-11-23: First meetup moved from Sat 28 Nov to Sun 6 Dec; prayer night 11 Dec, Bible study week of 14 Dec, hike 19 Dec. Both decks updated."
+        "2026-11-23: First meetup moved from Sat 28 Nov to Sun 6 Dec; prayer night 11 Dec, Bible study week of 14 Dec, hike 19 Dec. Both decks updated.",
+        "2026-11-24: Started a group chat with some young adults; their ideas (monthly gathering with real-life topics, prayer, Bible discussions, game nights, picnics) added to the joiners' deck"
       ]
     },
     {
