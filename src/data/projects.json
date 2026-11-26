@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-27",
   "areas": [
     {
       "id": "flow",
@@ -920,7 +920,7 @@
       "status": "active",
       "priority": 3,
       "summary": "Favour for Shaquan Khumalo: new website for Opening Up : The Podcast (episodes library, YouTube player, guest profiles, contact + newsletter forms, /admin page for him to add episodes). Built on Lucy's accounts, then handed over to his GitHub + Netlify.",
-      "nextAction": "Send Shaquan the preview link and the list of what we still need (logo, WhatsApp number, socials, photos, name checks)",
+      "nextAction": "Send Shaquan the updated preview and the remaining asks",
       "due": null,
       "keyDates": [],
       "milestones": [
@@ -930,6 +930,10 @@
         },
         {
           "text": "Preview live on Lucy's Netlify, forms tested",
+          "done": true
+        },
+        {
+          "text": "Shaquan's feedback rounds: announcements, ticket/receipt style, clips, show notes, Partner page",
           "done": true
         },
         {
@@ -954,7 +958,7 @@
         }
       ],
       "waitingOnLucy": [
-        "Share the preview with Shaquan and collect: logo, WhatsApp number, social links, photos, and the name/line-up checks in HANDOVER.md"
+        "Get from Shaquan: logo, WhatsApp number, TikTok/X handles, photos, chapter timestamps, guests' handles, YouTube watch hours; confirm Zanele = Zenn Maseko"
       ],
       "links": [
         {
@@ -972,7 +976,7 @@
       ],
       "folder": null,
       "tag": "favour",
-      "updated": "2026-11-20"
+      "updated": "2026-11-27"
     },
     {
       "id": "lucy-site",
@@ -1029,6 +1033,10 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-27",
+      "text": "Opening Up site: added clips, show notes + chapters, guest socials, Partner With Us page, one newsletter form; live on the preview."
+    },
     {
       "date": "2026-11-22",
       "text": "Personal website health check: all pages, links, HTTPS, forms and alerts working; Substack posts added, weekly Claude check set up."
