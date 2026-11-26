@@ -12,8 +12,11 @@ const CATEGORIES = {
 const PRI_COLORS = { high: '#EF4444', medium: '#F59E0B', low: '#10B981' }
 const ALL_CATS = Object.keys(CATEGORIES)
 
-export default function TaskList({ tasks, onToggle, onEdit, onDelete, onAdd, onUpdateDate }) {
+export default function TaskList({ tasks, onToggle, onEdit, onDelete, onAdd, onBulkAdd, onUpdateDate }) {
   const [quickTitle, setQuickTitle] = useState('')
+  const [pasteMode, setPasteMode] = useState(false)
+  const [pasteText, setPasteText] = useState('')
+  const [pasteFeedback, setPasteFeedback] = useState(null)
   const [quickCat, setQuickCat] = useState('work')
   const [quickPri, setQuickPri] = useState('medium')
   const [catFilter, setCatFilter] = useState('all')
@@ -24,6 +27,20 @@ export default function TaskList({ tasks, onToggle, onEdit, onDelete, onAdd, onU
     if (!quickTitle.trim()) return
     onAdd({ title: quickTitle.trim(), category: quickCat, priority: quickPri, description: '', dueDate: '', dueTime: '', tags: [] })
     setQuickTitle('')
+  }
+
+  // Paste a list: each line becomes one task (bullets like - * • are stripped)
+  const pasteLines = pasteText.split('\n').map(l => l.trim().replace(/^[-*•]\s*/, '')).filter(Boolean)
+  const handlePasteAdd = () => {
+    if (!pasteLines.length) return
+    const now = new Date().toISOString()
+    onBulkAdd(pasteLines.map((title, i) => ({
+      id: Date.now() + i + 1, title, description: '', category: quickCat, priority: quickPri,
+      dueDate: '', dueTime: '', tags: [], completed: false, createdAt: now,
+    })))
+    setPasteFeedback(`${pasteLines.length} task${pasteLines.length > 1 ? 's' : ''} added`)
+    setTimeout(() => setPasteFeedback(null), 3000)
+    setPasteText('')
   }
 
   const visible = tasks.filter(t => {
@@ -46,13 +63,26 @@ export default function TaskList({ tasks, onToggle, onEdit, onDelete, onAdd, onU
     <div style={s.page}>
       {/* Quick add */}
       <div style={s.quickCard}>
-        <input
-          style={s.quickInput}
-          placeholder="Add a new task..."
-          value={quickTitle}
-          onChange={e => setQuickTitle(e.target.value)}
-          onKeyDown={e => e.key === 'Enter' && handleQuickAdd()}
-        />
+        <div style={s.modeRow}>
+          <button style={{ ...s.modeBtn, ...(!pasteMode ? s.modeBtnActive : {}) }} onClick={() => setPasteMode(false)}>One task</button>
+          <button style={{ ...s.modeBtn, ...(pasteMode ? s.modeBtnActive : {}) }} onClick={() => setPasteMode(true)}>Paste a list</button>
+        </div>
+        {pasteMode ? (
+          <textarea
+            style={{ ...s.quickInput, minHeight: 110, resize: 'vertical' }}
+            placeholder={'One task per line...\n- lines starting with - or • are cleaned up'}
+            value={pasteText}
+            onChange={e => setPasteText(e.target.value)}
+          />
+        ) : (
+          <input
+            style={s.quickInput}
+            placeholder="Add a new task..."
+            value={quickTitle}
+            onChange={e => setQuickTitle(e.target.value)}
+            onKeyDown={e => e.key === 'Enter' && handleQuickAdd()}
+          />
+        )}
         <select style={s.sel} value={quickCat} onChange={e => setQuickCat(e.target.value)}>
           {ALL_CATS.map(c => <option key={c} value={c}>{CATEGORIES[c].label}</option>)}
         </select>
@@ -61,7 +91,14 @@ export default function TaskList({ tasks, onToggle, onEdit, onDelete, onAdd, onU
           <option value="medium">Medium Priority</option>
           <option value="low">Low Priority</option>
         </select>
-        <button style={s.addBtn} onClick={handleQuickAdd}>Add</button>
+        {pasteMode ? (
+          <button style={s.addBtn} onClick={handlePasteAdd}>
+            {pasteLines.length ? `Add ${pasteLines.length} task${pasteLines.length > 1 ? 's' : ''}` : 'Add all'}
+          </button>
+        ) : (
+          <button style={s.addBtn} onClick={handleQuickAdd}>Add</button>
+        )}
+        {pasteFeedback && <div style={s.pasteFeedback}>✓ {pasteFeedback}</div>}
       </div>
 
       {/* Search */}
@@ -243,6 +280,10 @@ function TaskCard({ task, onToggle, onEdit, onDelete, onUpdateDate }) {
 }
 
 const s = {
+  modeRow: { display: 'flex', gap: 6 },
+  modeBtn: { flex: 1, padding: '7px 10px', borderRadius: 99, fontSize: 13, fontWeight: 600, color: 'var(--text-2)', background: '#F3F4F6' },
+  modeBtnActive: { background: 'var(--primary-pale)', color: 'var(--primary)' },
+  pasteFeedback: { fontSize: 13, fontWeight: 600, color: 'var(--success)', textAlign: 'center' },
   page: { padding: '16px', display: 'flex', flexDirection: 'column', gap: 12, paddingBottom: 32 },
   quickCard: {
     background: 'white', borderRadius: 'var(--radius)',
