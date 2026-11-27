@@ -127,7 +127,7 @@
       "status": "launching",
       "priority": 1,
       "summary": "Book 1, a 65-page Kindle devotional ($2.99). Published on Amazon, on sale 14 November 2026.",
-      "nextAction": "Countdown stories 10-13 Nov, then launch day posts and church announcement on Sat 14 Nov",
+      "nextAction": "Approve Print on Demand quote and order one proof copy (quote valid to 11 Dec)",
       "due": "2026-11-14",
       "keyDates": [
         {
@@ -188,7 +188,7 @@
       "waitingOnLucy": [
         "Delete the last old copies still scheduled in Business Suite (some already deleted)",
         "Post countdown stories 10-13 Nov and launch stories 14 Nov from the phone",
-        "Pick a local printer for SA copies (Remata quote expires 16 Nov; Print on Demand valid to 11 Dec)"
+        "Approve Print on Demand quote 151067 (valid to 11 Dec): reply 'Approved', choose quantity, pay 100% upfront"
       ],
       "links": [
         {
@@ -198,10 +198,11 @@
       ],
       "folder": "Books/Passion Purpose Peace/KDP Ready",
       "tag": "book",
-      "updated": "2026-11-13",
+      "updated": "2026-11-27",
       "log": [
         "2026-11-08: Sunday reset: Amazon link in bio done; paperback page only shows from 14 Nov; some old Business Suite copies deleted; Claude scheduling Midnight Chronicles June + September (IG + Facebook)",
-        "2026-11-13: Local print quotes compared (comparison in Books/Passion Purpose Peace/Printer quote comparison.txt). Cheapest softcover: Print on Demand; local Midrand option: Remata"
+        "2026-11-13: Local print quotes compared (comparison in Books/Passion Purpose Peace/Printer quote comparison.txt). Cheapest softcover: Print on Demand; local Midrand option: Remata",
+        "2026-11-27: Kadimah quote in (much pricier); Print It ZA/Remata quote expired 16 Nov. Recommended printer: Print on Demand"
       ]
     },
     {
